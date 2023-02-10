@@ -1,0 +1,47 @@
+<!DOCTYPE hml>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Log In</title>
+        <link rel="stylesheet" href="css/styleslogin.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+        <div id="main-container">
+            <div class="first-container">
+                <div class="icon-container">
+                    <h2 id="login-tag">Login to your Account</h2>
+                    <img src="D:\Documents\HTML CAPSTONE\images\avatar-f.jpg" alt="avatar">
+                </div>
+                <div class="login-proper">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username..." name="uname" required>
+
+                    <!--<label for="email"><b>Email address</b></label>
+                    <input type="email" placeholder="Enter email address..." name="email" required>-->
+
+                    <label for="pass"><b>Password</b></label>
+                    <input type="password" placeholder="Enter a strong password..." name="pass" required>
+                </div>
+                <div class="center-button">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="option">
+                    <a href="#" id="forgotpass">Forgot password?</a>
+                    <!--<p id="signup">Don't have an account? <a href="#">Sign up</a></p>-->
+                </div>
+            </div>
+            <div class="second-container">
+                <div class="signup-blurb">
+                    <h2>New Here?</h2>
+                    <p><a href="signup.html">Sign up</a> for an account now!</p>
+                </div>
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

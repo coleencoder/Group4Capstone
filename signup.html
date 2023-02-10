@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="css/stylessignup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="sign-up-box">
+            <div class="design-portion">
+            </div>
+            <div class="sign-up-portion">
+                <div id="header">
+                    <h2>Sign Up</h2>
+                    <img src="D:\Documents\HTML CAPSTONE\images\blank.png" alt="Blank-Avatar.png">
+                </div>
+                <div class="sign-up">
+                    <label for="firstName"><b>Given Name</b></label>
+                    <input type="text" name="fullName" placeholder="Enter your name..." required>
+
+                    <label for="surName"><b>Surname</b></label>
+                    <input type="text" name="surName" placeholder="Enter your surname..." required>
+
+                    <label for="email"><b>Email address</b></label>
+                    <input type="email" name="email" placeholder="Enter email address..." required>
+
+                    <label for="userName"><b>Username</b></label>
+                    <input type="text" name="userName" placeholder="Enter username..." required>
+
+                    <label for="pass"><b>Password</b></label>
+                    <input type="password" name="pass" placeholder="Enter a strong password..." required>
+
+                    <label for="repeatPass"><b>Repeat Password</b></label>
+                    <input type="password" name="repeatPass" placeholder="Repeat password..." required>
+
+                    <p>By creating an account, you agree with the <a href="#">Terms of Use</a></p>
+                    <label for="termsOfUse">
+                        <input type="checkbox" checked="checked" name="termsOfUse"> I agree
+                    </label>
+                </div>
+                <div class="center-signup">
+                    <button type="submit" id="continue">Sign Up</button>
+                    <button type="submit" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
