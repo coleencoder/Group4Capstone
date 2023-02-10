@@ -1,0 +1,77 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+#sign-up-box {
+    display: flex;
+}
+.design-portion {
+    background: linear-gradient(120deg, 
+    #9239AA 0%,
+    #8375CC 49%,
+    #00D4FF 100%);
+    width: 50%;
+    height: 150vh;
+}
+.sign-up-portion {
+    width: 50%;
+}
+#header {
+    text-align: center;
+    padding: 10px;
+}
+#header > img {
+    width: 250px;
+    padding: 20px 0;
+    border-radius: 50%;
+}
+.sign-up {
+    padding: 10px;
+}
+input[type=text], input[type=email], input[type=password] {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+}
+.center-signup {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+#continue:hover {
+    background-color: var(--coolor1);
+    color: white;
+}
+#cancel:hover {
+    background-color: red;
+    color: white;
+}
+.center-signup > button {
+    border: none;
+    width: 30%;
+    padding: 10px 0;
+}
+@media (max-width: 800px) {
+    #header > img {
+        width: 150px;
+    }
+    .design-portion {
+        height: 135vh;
+    }
+}
+@media (max-width: 600px) {
+    .design-portion {
+        display: none;
+    }
+    .sign-up-portion {
+        width: 100%;
+        height: 100vh;
+    }
+}

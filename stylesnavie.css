@@ -1,0 +1,120 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.nav-actual {
+    overflow: hidden;
+    background-color: var(--coolor1);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.nav-actual a {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+.logo-holder {
+    text-align: left;
+}
+.logo-holder h2 {
+    padding: 15px 90px 15px 20px;
+    color: white;
+}
+.logo-holder h2:hover {
+    color: var(--coolor3);
+    cursor: pointer;
+}
+.dropdown {
+    overflow: hidden;
+}
+.log-in {
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 40px;
+    background-color: var(--coolor1);
+}
+.nav-actual a:hover, .log-in:hover {
+    background-color: var(--coolor2);
+}
+#login-option {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+#login-option a {
+    color: var(--coolor1);
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+  }
+#login-option a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover #login-option {
+    display: block;
+}
+@media (max-width: 1000px) {
+    .nav-actual a {
+        font-size: 1em;
+        padding: 15px 25px;
+    }
+    .log-in {
+        font-size: 1em;
+        padding: 15px 25px;
+    }
+    #login-option {
+        font-size: 0.9em;
+        min-width: 50px;
+    }
+    #login-option a {
+        padding: 15px 15px;
+      }
+}
+@media (max-width: 770px) {
+    .logo-holder h2 {
+        padding: 10px 45px 10px 20px;
+    }
+    .nav-actual a {
+        font-size: 1em;
+        padding: 15px 15px;
+    }
+    .log-in {
+        font-size: 1em;
+        padding: 15px 15px;
+    }
+    #login-option {
+        font-size: 0.9em;
+        min-width: 50px;
+    }
+    #login-option a {
+        padding: 15px 15px;
+      }
+}
+@media (max-width: 550px) {
+    .logo-holder {
+        display: none;
+    }
+    .nav-actual {
+        justify-content: center;
+    }
+    #login-option {
+        font-size: 0.9em;
+        min-width: 35px;
+    }
+}
