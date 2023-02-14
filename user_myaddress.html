@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Address Book | User</title>
+        <link rel="stylesheet" href="css/styles_myaddress.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <h2 id="headerpage">My Account</h2>
+        <div id="main-box">
+
+            <div class="nav-box">
+                <nav id="navbar-user">
+                    <div><i class="fa fa-user-circle"></i> <a href="#" class="nav-link">My Account</a></div>
+                    <div><i class="fa fa-address-book"></i> <a href="#" class="nav-link">My Address Book</a></div>
+                    <div><i class="fa fa-suitcase"></i> <a href="#" class="nav-link">My Orders</a></div>
+                    <div><i class="fa fa-bell"></i> <a href="#" class="nav-link">Notifications</a></div>
+                    <!--<div><i class="fa fa-gear"></i> <a href="#" class="nav-link">Account Settings</a></div>-->
+                </nav>
+            </div>
+
+            <div class="body-box">
+                <h3 class="body-title">Edit Address</h3>
+                <p class="body-detail">Shipping Address</p>
+                <hr>
+                <form action="/action_page.php">
+                    <label for="hold-value">Given Name</label>
+                    <input type="text" name="hold-value" onfocus="this.value=''" value="Aramie Moroguso">
+
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="phoneNumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="09099909090">
+
+                    <label for="houseStreet">House Number, Street Name</label>
+                    <input type="text" name="houseStreet" onfocus="this.value=''" value="51 Bacolod Street">
+
+                    <label for="baranggay">Baranggay</label>
+                    <input type="text" name="baranggay" onfocus="this.value=''" value="San Roque">
+
+                    <label for="townCity">Town/City</label>
+                    <input type="text" name="townCity" onfocus="this.value=''" value="Marikina City">
+
+                    <label for="reg">Region</label>
+                    <input type="text" name="reg" onfocus="this.value=''" value="Metro Manila">
+
+                    <button type="submit" id="save">Save</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
