@@ -84,29 +84,6 @@ hr {
 #edit:visited {
     color: black;
 }
-#verifyemail {
-    color: var(--coolor1);
-    float: right;
-    padding-right: 10em;
-    /*position: absolute;
-    left: 55em;*/
-    text-decoration: none;
-}
-#verifyemail:hover {
-    opacity: 0.8;
-}
-@media (max-width: 1050px) {
-    #verifyemail {
-        padding-right: 2em;
-    }
-}
-@media (max-width: 840px) {
-    #verifyemail {
-        padding-right: 0;
-        position: absolute;
-        top: 26.5em;
-    }
-}
 @media (max-width: 750px) {
     .nav-link {
         position: relative;
@@ -119,11 +96,6 @@ hr {
     }
 }
 @media (max-width: 580px) {
-    #verifyemail {
-        padding-right: 0;
-        position: absolute;
-        top: 32.8em;
-    }
     #headerpage {
         font-weight: 500px;
         font-size: 2em;
