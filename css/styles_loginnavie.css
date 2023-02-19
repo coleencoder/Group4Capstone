@@ -1,0 +1,83 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.nav-actual {
+    display: flex;
+    background-color: var(--coolor1);
+}
+#header, #cart {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    line-height: 40px;
+}
+#cart {
+    font-size: 1.2em;
+}
+#cart:hover {
+    background-color: var(--coolor2);
+}
+.first-ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+.first-ul li {
+    display: inline-block;
+}
+.first-ul li > a {
+    display: block;
+    padding: 12px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    line-height: 40px;
+}
+.first-ul li > a:hover {
+    background-color: var(--coolor2);
+}
+.sub-ul li {
+    width: 130px;
+    float: none;
+    display: list-item;
+    list-style: none;
+    position: relative;
+}
+.sub-ul {
+    display: none;
+    position: absolute;
+    background-color: var(--coolor1);
+    top: 64px;
+}
+.first-ul li:hover > ul {
+    display: inherit;
+}
+@media (max-width: 620px) {
+    .first-ul li > a, #header, #cart {
+        font-size: 0.8em;
+    }
+    .sub-ul li {
+        width: 80px;
+    }
+}
+@media (max-width: 460px) {
+    .first-ul li {
+        text-align: center;
+    }
+    .first-ul li > a, #header, #cart {
+        line-height: 20px;
+        padding: 8px;
+    }
+    .sub-ul {
+        top: 35px;
+    }
+}

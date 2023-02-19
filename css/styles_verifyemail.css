@@ -1,0 +1,113 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+html{
+    height: 100%;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background: linear-gradient(120deg,
+    #72a58b 0%,
+    #e4e791 49%,
+    #ffae78 100%
+    );
+}
+#center-h2 {
+    background-color: var(--coolor4);
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    text-align: center;
+}
+#page-title {
+    font-size: 4em;
+    color: var(--coolor3);
+}
+#psa-body {
+    width: 80%;
+    padding: 4em;
+    margin: 3em auto;
+    background-color: var(--coolor4);
+}
+.psa-text {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#button-verify {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+#button-verify > button{
+    padding: 1em 1.2em;
+    background-color: var(--coolor2);
+    color: var(--coolor3);
+    font-size: 1.4em;
+    border: none;
+}
+#button-verify > button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media (max-width: 1080px) {
+    #center-h2 {
+        margin: 1.5em auto;
+        padding: 1.5em auto;
+    }
+    #page-title {
+        font-size: 3.5em;
+    }
+    #psa-body {
+        padding: 3em;
+    }
+    .psa-text {
+        font-size: 1.2em;
+    }
+    #button-verify > button{
+        padding: 1em 1.2em;
+        background-color: var(--coolor2);
+        color: var(--coolor3);
+        font-size: 1.2em;
+        border: none;
+    }
+}
+@media (max-width: 700px) {
+    #center-h2 {
+        margin: 1.5em auto;
+        padding: 1em auto;
+    }
+    #page-title {
+        font-size: 2.5em;
+    }
+    #psa-body {
+        padding: 3em;
+    }
+    .psa-text {
+        font-size: 1em;
+    }
+    #button-verify > button{
+        padding: 0.8em 1em;
+        background-color: var(--coolor2);
+        color: var(--coolor3);
+        font-size: 1em;
+        border: none;
+    }
+    #center-h2, #psa-body {
+        width: 65%;
+    }
+}
+@media (max-width: 550px) {
+    #page-title {
+        font-size: 1.8em;
+    }
+    #center-h2, #psa-body {
+        width: 65%;
+    }
+}
