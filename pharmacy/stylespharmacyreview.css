@@ -150,7 +150,7 @@
 
     text-align: center;
 
-    width: 50%;
+    width: 40%;
 
     padding: 20px 20px 30px 20px;
 
@@ -245,7 +245,7 @@
     padding: 10px;
     margin-left: 5%;
     margin-right: 5%;
-    
+    margin-bottom: 10%;
 }
 
 @media (max-width: 950px) {
@@ -347,3 +347,16 @@
 .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
 .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
 .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.review{
+    margin-bottom: 2%;
+}
+/*Product Image*/
+.product_image{
+    height: 300px;
+    width: 300px;
+    margin :2%;
+}
+
+
+
