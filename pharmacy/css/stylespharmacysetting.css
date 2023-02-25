@@ -1,0 +1,256 @@
+:root {
+
+    --coolor1: #3FBFDA;
+
+    --coolor2: #E55246;
+
+    --coolor3: #11333A;
+
+    --coolor4: #DAA520;
+
+}
+
+*, *::before, *::after {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+#main-box {
+
+    display: flex;
+
+}
+
+:not(i) {
+
+    font-family: 'Rubik', sans-serif;
+
+}
+
+/*START NAVBAR CSS*/
+#seller-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 19svw;
+
+    height:100svh;
+
+    background-color: var(--coolor3);
+}
+
+#seller-profile{
+    min-width: none;
+    max-width: 100%;
+    height:100svh;
+}
+
+#icon {
+
+    color: white;
+
+    text-align: center;
+
+    padding-top: 50px;
+
+    padding-bottom: 60px;
+
+}
+
+#icon > img{
+
+    width: 100px;
+
+}
+
+.link-page {
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 20px;
+
+}
+
+.link-page:hover {
+
+    color: var(--coolor4)
+
+}
+/*END NAVBAR CSS*/
+
+.greet, .interlude {
+
+    padding: 70px 0px 15px 15px;
+
+}
+
+.greet > p {
+
+    font-weight: 300;
+
+}
+
+.motivation {
+
+    background-color: var(--coolor1);
+
+    color: var(--coolor3);
+
+    padding: 30px;
+
+    width: 81svw;
+
+    height: 82.9%;
+}
+
+@media (max-width: 950px) {
+
+    .item {
+
+        width: 30%;
+
+        padding: 5px;
+
+        margin: 10px;
+
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .interlude {
+
+        padding: 30px 0px 15px 15px;
+
+    }
+
+    #stats {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    .values {
+
+        margin: 10px auto;
+
+        text-align: center;
+
+        width: 50%;
+
+        padding: 12px 12px 22px 12px;
+
+        border-radius: 10px;
+
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .item {
+
+        width: 50%;
+
+        margin: 10px;
+
+        text-align: center;
+
+    }
+
+}
+
+/*Pharmacy Account Info css*/
+.profile-value {
+    font-weight: 300;
+    padding: 0 0 2em 10em;
+}
+.profile-trait {
+    float: left;
+    clear: left;
+}
+/*HEADER ROW CSS*/
+.hr {
+    width: 90%;
+    margin: 3% auto;
+}
+/*EDIT BUTTON CSS*/
+#button-container {
+    width: 180px;
+    background-color: var(--coolor3);
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-align: center;
+}
+#button-container:hover {
+    opacity: 0.8;
+}
+#edit {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+#edit:visited {
+    color: wheat;
+}
+/*PHARMACY_SETTING_EDIT CSS*/
+input[name="hold-value"] {
+    width: 70%;
+    margin-bottom: 30px;
+}
+input[name="fullName"] {
+    width: 70%;
+    margin-bottom: 30px;
+}
+input[name="phoneNumber"] {
+    width: 50%;
+    margin-bottom: 30px;
+}
+input[name="email"] {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 70%;
+}
+select[name="gender"] {
+    margin-bottom: 30px;
+}
+input[name="birthDay"] {
+    margin-bottom: 30px;
+}
+button {
+    display: block;
+    width: 180px;
+    background-color: var(--coolor3);
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+button:hover {
+    opacity: 0.8;
+}
+label, input {
+    display: block;
+}
+input, select {
+    padding: 5px 5px 5px 2px;
+    font-weight: 300;
+}
