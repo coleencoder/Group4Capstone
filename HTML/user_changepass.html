@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Edit Profile | User</title>
+        <link rel="stylesheet" href="../css/stylesuser.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h2 id="headerpage">My Account</h2>
+        <div id="main-box">
+
+            <div class="nav-box">
+                <nav id="navbar-user">
+                    <div><i class="fa fa-user-circle"></i> <a href="user_myaccountdef.html" class="nav-link">My Account</a></div>
+                    <div><i class="fa fa-address-book"></i> <a href="user_myaddressdef.html" class="nav-link">My Address Book</a></div>
+                    <div><i class="fa fa-suitcase"></i> <a href="#" class="nav-link">My Orders</a></div>
+                    <div><i class="fa fa-bell"></i> <a href="#" class="nav-link">Notifications</a></div>
+                    <!--<div><i class="fa fa-gear"></i> <a href="#" class="nav-link">Account Settings</a></div>-->
+                </nav>
+            </div>
+
+            <div class="body-box">
+                <h3 class="body-title">Change Password</h3>
+                <!--<p class="body-detail">Personal Information</p>-->
+                <hr>
+                <div class="personal-forms">
+                <form action="/action_page.php">
+                    <label for="hold-value">Password</label>
+                    <input type="password" name="hold-value" onfocus="this.value=''" value="AraMogus00">
+
+                    <div id="float-left">
+                        <label for="firstName">New Password</label>
+                        <input type="password" name="fullName" onfocus="this.value=''" value="Aramie Moroguso">
+                    </div>
+
+                    <label for="email">Re-enter New Password</label>
+                    <input type="password" name="email" onfocus="this.value=''" value="AraMogusus00@email.com">
+
+                    <button type="submit" id="save">Save</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
