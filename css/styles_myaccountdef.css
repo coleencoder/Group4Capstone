@@ -52,7 +52,10 @@ i {
     /*border: 2px solid black;*/
     padding: 1em;
     width: 65vw;
-    height: 80vh;
+    height: fit-content;
+}
+.body-detail{
+    padding-top: 3%;
 }
 .profile-value {
     font-weight: 300;
