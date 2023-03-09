@@ -1,0 +1,52 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed; left: 320px;
+  margin: auto;
+  text-align: center;
+    
+  border-radius: 25px;
+  border: 2px solid #3FBFDA;
+  padding: 20px;
+  width: 300px;
+  height: 6em;
+    border-top-width: thick; 2em;
+
+}
+
+img {
+  border-radius: 50%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #E55246;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
