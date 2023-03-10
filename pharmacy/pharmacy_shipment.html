@@ -9,6 +9,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            /*table js*/
+            function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var tr = document.getElementById("myRow");
+            if (checkBox.checked == true){
+                tr.style.backgroundColor = "yellow";
+            } else {
+                tr.style.backgroundColor = "white";
+            }
+            }
+            /*tab js*/
+            function opentab(evt, tab) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("table");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tab).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+        </script>
     </head>
     <body>
         <div id="main-box">
@@ -24,31 +50,35 @@
                 <i></i> <a href="#" class="link-page">Settings</a>
             </nav>
             <div id="seller-profile">
-                <div class="greet">
-                    <h2>Shipment</h2>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'Shipment')"><h2>Shipment</h2></button>
+                    <button class="tablinks" onclick="opentab(event, 'Prescription')"><h2>Prescription</h2></button>
                 </div>
-                <div id="table">
+                <!--SHIPMENT TABLE-->
+                <div  id="Shipment" class="table">
                     <div id="buttons-flex">
                         <div class="show-all">
                             <a href="#" id="show-button">Update Table</a>
                         </div>
-                        <div class="show-all" style="position: relative; left: 35%;">
-                            <a href="#" id="show-button">CHANGE STATUS</a>
+                        <div class="show-all">
+                            <a href="#" id="show-button">Search</a>
                         </div>
-                        <div class="show-all" style="position: relative; left: 40%;">
+                        <div class="show-all">
+                            <a href="#" id="show-button">Change Status</a>
+                        </div>
+                        <div class="show-all">
                             <a href="#" id="show-button">Save</a> 
                         </div>
                     </div>
-                    <!--SHIPMENT TABLE-->
                     <div class="table-wrapper">
-                        <table id="resizeMe" class="fl-table">
+                        <table class="fl-table">
                             <thead>
                             <tr>
                                 <th style="background-color: white;"></th>
                                 <th>ORDER ID</th>
                                 <th>CUSTOMER ID</th>
                                 <th>CUSTOMER NAME</th>
-                                <th>CUSTOMER ADDRESS</th>
+                                <th>CUSTOMER ADDRESS</th>   
                                 <th>NAME</th>
                                 <th>QUANTITY</th>
                                 <th>PRICE</th>
@@ -67,25 +97,56 @@
                                 <td>5</td>
                                 <td>5P</td>
                                 <td>P25</td>
-                                <td>TO SHIP</td> 
+                                <td>FOR APPROVAL</td> 
                             </tr>
                             <tbody>
                         </table>
                     </div>
                     <!--END SHIPMENT TABLE-->
                 </div>
+                <!--END SHIPMENT TABLE-->
+                <!--PRESCRIPTION TABLE-->
+                <div id="Prescription" class="table">
+                    <div id="buttons-flex">
+                        <div class="show-all">
+                            <a href="#" id="show-button">Update Table</a>
+                        </div>
+                        <div class="show-all">
+                            <a href="#" id="show-button">Search</a>
+                        </div>
+                        <div class="show-all">
+                            <a href="#" id="show-button">Change Status</a>
+                        </div>
+                        <div class="show-all">
+                            <a href="#" id="show-button">Save</a> 
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="fl-table">
+                            <thead>
+                            <tr>
+                                <th style="background-color: white;"></th>
+                                <th>VALIDATION ID</th>
+                                <th>ORDER ID</th>
+                                <th>IMAGE</th>
+                                <th>STATUS</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="myRow">
+                                <th><input type="checkbox" name="name1"  id="myCheck" onclick="myFunction()">&nbsp;</th>
+                                <td>000000001</td>
+                                <td>000000001</td>
+                                <td><a href>image.jpg</a></td>
+                                <td>FOR APPROVAL</td>
+                            </tr>
+                            <tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--END PRESCRIPTION TABLE-->
             </div>
         </div>
-        <script>
-            function myFunction() {
-            var checkBox = document.getElementById("myCheck");
-            var tr = document.getElementById("myRow");
-            if (checkBox.checked == true){
-                tr.style.backgroundColor = "yellow";
-            } else {
-                tr.style.backgroundColor = "white";
-            }
-            }
-        </script>
+
     </body>
 </html>
