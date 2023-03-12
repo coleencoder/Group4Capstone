@@ -1,0 +1,131 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#main-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#headerpage {
+    font-weight: 500px;
+    font-size: 2.5em;
+    padding: 3em 3em 1em 3em;
+}
+.nav-box, body {
+    background-color: var(--coolor4);
+}
+.nav-box {
+    width: 30vw;
+}
+i {
+    color: var(--coolor2);
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 1em;
+}
+.nav-link:hover {
+    color: var(--coolor2);
+}
+#navbar-user {
+    display: flex;
+    flex-direction: column;
+}
+#navbar-user > div {
+    padding: 1em;
+}
+.body-box {
+    background-color: white;
+    /*border: 2px solid black;*/
+    padding: 1em;
+    width: 65vw;
+    height: 80vh;
+}
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+.icono {
+    float: left;
+    clear: right;
+    color: var(--coolor1);
+    font-size: 2em;
+}
+.notif-row {
+    border: 1px solid black;
+    padding-left: 1.5em;
+    padding-top: 1em;
+}
+.notif-row:hover {
+    cursor: pointer;
+    background-color: var(--coolor4);
+}
+.notif-type, .notif-desc {
+    font-size: 1em;
+    padding-left: 2.5em;
+}
+.notif-desc {
+    font-weight: 300;
+    padding-bottom: 2.5em;
+}
+@media (max-width: 1000px) {
+    .body-box {
+        height: 90vh;
+    }
+    .notif-row {
+        padding-left: 1em;
+        padding-right: 0.4em;
+    }
+}
+@media (max-width: 750px) {
+    .nav-link {
+        position: relative;
+        left: 0;
+    }
+}
+@media (max-width: 580px) {
+    #headerpage {
+        font-weight: 500px;
+        font-size: 2em;
+        padding: 1em;
+    }
+    #main-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .nav-box{
+        width: 70vw;
+    }
+    .body-box{
+        width: 80%;
+    }
+    #navbar-user {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 500px) {
+    .notif-type, .notif-desc {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 400px) {
+    .notif-type, .notif-desc {
+        font-size: 0.7em;
+    }
+}
