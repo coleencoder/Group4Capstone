@@ -1,0 +1,54 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #DAA520;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main-box {
+    display: flex;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+/*START NAVBAR CSS*/
+#seller-options {
+    display: flex;
+    flex-direction: column;
+    width: 19svw;
+    height:100svh;
+    background-color: var(--coolor3);
+}
+#seller-profile{
+    width: 80%;
+}
+#icon {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+#icon > img{
+    width: 100px;
+}
+.link-page {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.link-page:hover {
+    color: var(--coolor4)
+}
+.item > img {
+    width: 150px;
+}
+.greet, .interlude {
+    padding: 70px 0px 15px 15px;
+}
+.greet > p {
+    font-weight: 300;
+}
