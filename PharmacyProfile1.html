@@ -1,15 +1,134 @@
-<link rel="stylesheet" href="PharmacyProfile1.css">
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
 
-<div class="card">
-    <div style = "position:relative; left:-300px; top:156px;">
-  <img src="avatar-f.jpg" alt="Name" style="width:50%" >
-        
-    </div>
-  <h1>Customer Name</h1>
-  <p class="title">Customer</p>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <p><button>You are Signed In,
-           Click here for Contact</button></p>
-</div>
+.header {
+  padding: 70px;
+    min-width: 2000px;
+  background: #E55246;
+  color: white;
+    position: absolute; left: -20px; top: -5px;
+}
+
+.card {
+    position: absolute; left: 190px;
+  margin: auto;
+  text-align: center;
+    
+}
+.width {
+    position: absolute; top:-130px; left: 610px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #11333A;
+    background: #3FBFDA;
+      font-size: 11px;
+}
+
+img {
+  border-radius: 50%;
+    position: relative; top: -110px; left: 230px;
+    border: 2px solid #11333A;
+    width: -100em;
+}
+
+.Bio {
+  color: black;
+  font-size: 25px;
+    position: absolute; top: -70px; left: 609px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #11333A;
+    background: #3FBFDA;
+}
+.perpendicular-line {
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 0;
+  transform: rotate(0deg);
+  border-color: grey;
+  position: relative; bottom: -90px;
+}
+
+#Medicines {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 205px 215px;
+    grid-gap: 5em;
+    padding: 1em 15em;
+    width: 90em; 
+   position: absolute; bottom: -18em;
+}
+
+.options {
+    background-color: var(--coolor3);
+    text-align: center;
+    border-radius: 5px;
+  outline: 1px solid #0198fa;
+  padding: 10px 10px;
+  border: 5px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.options > a {
+    position: relative;
+    top: 30%;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    
+}
+.options > img {
+    width: auto;
+    height: 180px;
+    border-radius: 5px;
+}
+.options:hover {
+    background-color: var(--coolor1);
+    outline: 0px solid transparent;
+  padding: 20px 20px;
+  border: 5px solid #0198fa;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#Categories {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px;
+    grid-gap: 2em;
+    padding: 10em 10em;
+    width: 100em;
+}
+.Category {
+    background-color: var(--coolor3);
+    text-align: center;
+    border-radius: 5px;
+    outline: 1px solid #0198fa;
+  padding: 20px 20px;
+  border: 5px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+    height: 20px;
+}
+.Category > a {
+    position: relative; 
+    top: -70%;
+    color: white;
+    text-decoration: none;
+}
+.Category:hover {
+    background-color: var(--coolor1);
+    outline: 0px solid transparent;
+  padding: 20px 20px;
+  border: 5px solid #0198fa;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
