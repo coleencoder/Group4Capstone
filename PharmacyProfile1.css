@@ -1,52 +1,80 @@
-:root {
-    --coolor1: #3FBFDA;
-    --coolor2: #E55246;
-    --coolor3: #11333A;
-    --coolor4: #F0F0F0;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    position: fixed; left: 320px;
-  margin: auto;
-  text-align: center;
+<html>
+<head>
+<link rel="stylesheet" href="PharmacyProfile1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="header"></div> 
+
+<hr class="perpendicular-line">
+
+<div class="card"><div style = "position:absolute; left:-300px; top:156px;"></div>
     
-  border-radius: 25px;
-  border: 2px solid #3FBFDA;
-  padding: 20px;
-  width: 300px;
-  height: 6em;
-    border-top-width: thick; 2em;
+    <div class= "img"><img src="avatar-f.jpg" alt="Name" style="width:20%" ></div>
+    
+ <div class="width"><h1>Customer Name</h1></div><br /> 
+  <p class="Bio">Bio
+   <br> - Address
+    <br>-Details About Pharmacy
+    <br>- Legitimacy etc.</p>
+</div>
 
-}
+    
+    <body>
+    
+    <div id="Categories">
+                <div class="Category">
+                    <a href="#"><h3>Category 1</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Category 2</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Category 3</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Category 4</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Category 5</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Category 6</h3></a>
+                </div>
+            </div>
+    
+    <div id="Medicines">
+    <div id="analgesic" class="options">
+                    <a href="#"><h3>Analgesic</h3></a>
+                </div>
+                <div id="antibiotics" class="options">
+                    <a href="#"><h3>Antibiotics</h3></a>
+                </div>
+                <div id="antihistamine" class="options">
+                    <a href="#"><h3>Antihistamine</h3></a>
+                </div>
+                <div id="decongestant" class="options">
+                    <a href="#"><h3>Decongestants</h3></a>
+                </div>
+                <div id="herbal" class="options">
+                    <a href="#"><h3>Herbal Products</h3></a>
+                </div>
+                <div id="maintenance" class="options">
+                    <a href="#"><h3>Maintenance</h3></a>
+                </div>
+                <div id="supplements" class="options">
+                    <a href="#"><h3>Supplements</h3></a>
+                </div>
+                <div id="vitamins" class="options">
+                    <a href="#"><h3>Vitamins</h3></a>
+                </div>
+        
+            </div>
+        
 
-img {
-  border-radius: 50%;
-}
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #E55246;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
+    </body>
+</html>
