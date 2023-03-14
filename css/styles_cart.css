@@ -1,0 +1,105 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*em = based on previously stated measurement, or the default 16px*/
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#headerpage {
+    font-weight: 500px;
+    font-size: 2.5em;
+    padding: 3em 3em 1em 3em;
+}
+body {
+    background-color: var(--coolor4);
+}
+#med-image {
+    height: 100%;
+    width: 100%;
+}
+.heading-word {
+    padding: 1em 1em 0.5em 1em;
+}
+.item-row-value {
+    padding: 1.3em;
+}
+#input-quantity {
+    padding: 0.5em;
+    margin: 1.3em;
+    font-weight: 300;
+}
+.item, .cart-heading {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.cart-heading, .item-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    /*border: 1px solid black;*/
+}
+.item-row {
+    margin: 10px 0;
+    /*border: 1px solid black;*/
+}
+hr {
+    border: 2px solid var(--coolor1);
+    width: 85%;
+    margin: 1em auto;
+}
+#pharmacy-name {
+    padding: 1em;
+}
+#head-holder-ten {
+    width: 10%;
+    /*border: 1px solid black;*/
+}
+#head-holder-forty {
+    width: 40%;
+    /*border: 1px solid black;*/
+    font-weight: 300;
+}
+#head-holder-forty-padded {
+    margin-left: 10%;
+    width: 40%;
+    /*border: 1px solid black;*/
+    font-weight: 300;
+}
+.head-holder-fifteen {
+    width: 15%;
+    /*border: 1px solid black;*/
+    font-weight: 300;
+}
+.head-holder-twenty {
+    width: 20%;
+    /*border: 1px solid black;*/
+    font-weight: 300;
+}
+@media (max-width: 700px) {
+    .heading-word {
+        font-size: 0.8em;
+    }
+    .item-row-value {
+        font-size: 0.8em;
+    }
+    #input-quantity {
+        padding: 0.3em;
+        margin: 1.5em;
+    }
+}
+@media (max-width: 550px) {
+    .item, .cart-heading {
+        width: 90%;
+    }
+}
