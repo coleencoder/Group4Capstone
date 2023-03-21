@@ -1,0 +1,71 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*em = based on previously stated measurement, or the default 16px*/
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--coolor4);
+}
+#main-dock {
+    width: 80%;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 2em;
+    box-shadow: 0 -4px 20px 0 rgba(95, 88, 88, 0.2), 0 6px 20px 0 rgba(95, 88, 88, 0.2);
+}
+#total-portion {
+    display: flex;
+    /*border: 1px solid black;*/
+    padding-right: 1.2em;
+}
+#total {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+#price {
+    padding-left: 0.2em;
+    font-size: 1.2em;
+    color: var(--coolor2);
+}
+#linktocheckout {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    background-color: var(--coolor1);
+    padding: 0.5em 2em;
+}
+#linktocheckout:hover {
+    opacity: 0.8;
+}
+#button-portion {
+    padding-right: 0em;
+    text-align: center;
+}
+@media (max-width: 450px) {
+    #main-dock {
+        justify-content: center;
+        align-items: center;
+    }
+    #total-portion {
+        flex-direction: column;
+    }
+    #total, #price, #linktocheckout {
+        font-size: 0.8em;
+    }
+}
