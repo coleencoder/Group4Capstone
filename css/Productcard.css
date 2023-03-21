@@ -1,0 +1,148 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+
+h1{
+  position: relative; bottom: 400px; left: 44%;
+  font-size: 50px;
+  border: 1px solid;
+  width: 19%;
+  padding: 5px;
+  box-shadow: 0px 3px #E55246;
+}
+
+h3{
+    position: relative; bottom: 600px; left: 25px;
+    font-size: 50px;
+    color: white;
+}
+
+.header {
+  padding: 70px;
+  min-width: 2000px;
+  background: #E55246;
+  color: white;
+  position: relative; left: -10px; top: -10px;
+}
+
+img{
+    position: relative; top: 215px; left: 12%;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+.card {
+  max-width: 800px;
+  position: relative; top: -400px; left: 15%;
+  margin: auto;
+  text-align: left; 
+}
+
+.price {
+  color: #3FBFDA;
+  font-size: 30px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #E55246;
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+h2{
+    position: relative; bottom: 640px; left: 74%;
+}
+
+.container {
+  display: block;
+  position: relative; left: 74%; bottom: 650px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.Title{
+    color: gray;
+    font-size: 22px;
+}
+.Title2 {
+    color: gray;
+        font-size: 20px;
+}
+.quantity{
+    color: gray;
+    font-size: 20px;
+    position: relative; top: 10px;
+}
