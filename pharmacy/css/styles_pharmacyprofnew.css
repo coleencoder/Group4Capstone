@@ -1,0 +1,160 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #DAA520;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#main-box {
+    display: flex;
+}
+#seller-options {
+    display: flex;
+    flex-direction: column;
+    width: 19.5%;
+    background-color: var(--coolor3);
+}
+#seller-profile {
+    width: 81.5%;
+}
+#icon {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+#icon > img{
+    width: 100px;
+}
+.link-page {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.link-page:hover {
+    color: var(--coolor4)
+}
+.item > img {
+    width: 150px;
+}
+.greet {
+    padding: 70px 0px 15px 15px;
+}
+#profile-intro {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 85%;
+    margin: 1em auto;
+    display: flex;
+}
+#intro-icon > img {
+    width: 150px;
+}
+#intro-icon {
+    /*border: 1px solid black;*/
+    padding: 0.5em;
+    width: 170px;
+}
+#intro-details {
+    padding: 0.3em 0.5em;
+}
+#pharmacy-name {
+    font-size: 1.5em;
+}
+#pharmacy-address {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.fa-star {
+    color: #ffc700;
+    padding-top: 0.3em;
+}
+#no-of-rating {
+    display: inline-block;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+}
+#intro-see {
+    margin-top: 2em;
+}
+#view-profile {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    background: var(--coolor1);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+#view-profile:hover {
+    opacity: 0.8;
+}
+@media (max-width: 950px) {
+    #profile-intro {
+        padding: 1em;
+    }
+    #intro-icon > img {
+        width: 120px;
+    }
+    #intro-icon {
+        padding: 0.3em;
+        width: 140px;
+    }
+    #pharmacy-name {
+        font-size: 1.2em;
+    }
+    #pharmacy-address {
+        font-size: 1em;
+    }
+    #intro-see {
+        margin-top: 1em;
+    }
+    #view-profile {
+        padding: 0.3em 1em;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 600px) {
+    #profile-intro {
+        padding: 0.5em;
+    }
+    #intro-icon > img {
+        width: 90px;
+    }
+    #intro-icon {
+        padding: 0.2em;
+        width: 110px;
+    }
+    #pharmacy-name {
+        font-size: 1em;
+    }
+    #pharmacy-address {
+        font-size: 0.8em;
+    }
+    #no-of-rating {
+        font-size: 0.8em;
+    }
+    #intro-see {
+        margin-top: 0.8em;
+    }
+    #view-profile {
+        padding: 0.3em 0.8em;
+        font-size: 0.6em;
+    }
+}
+@media (max-width: 400px) {
+    #intro-icon > img {
+        width: 60px;
+    }
+    #intro-icon {
+        padding: 0.2em;
+        width: 80px;
+    }
+}
