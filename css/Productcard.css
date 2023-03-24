@@ -6,7 +6,7 @@
 }
 
 h1{
-  position: relative; bottom: 400px; left: 44%;
+  position: relative; bottom: 400px; left: 47%;
   font-size: 50px;
   border: 1px solid;
   width: 19%;
@@ -29,13 +29,13 @@ h3{
 }
 
 img{
-    position: relative; top: 215px; left: 12%;
+    position: relative; top: 215px; left: 19%;
     box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
     padding: 5px;
 }
 .card {
   max-width: 800px;
-  position: relative; top: -400px; left: 15%;
+  position: relative; top: -400px; left: 18%;
   margin: auto;
   text-align: left; 
 }
@@ -49,6 +49,7 @@ img{
   border: none;
   outline: 0;
   padding: 12px;
+  position: relative; top: 30px; 
   color: white;
   background-color: #E55246;
   text-align: center;
@@ -58,6 +59,23 @@ img{
 }
 
 .card button:hover {
+  opacity: 0.7;
+}
+
+.card button1 {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  position: relative; bottom: 22px; left: 23%;
+  color: white;
+  background-color: #E55246;
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  font-size: 18px;
+}
+
+.card button1:hover {
   opacity: 0.7;
 }
 
@@ -144,5 +162,5 @@ h2{
 .quantity{
     color: gray;
     font-size: 20px;
-    position: relative; top: 10px;
+    position: relative; top: 20px;
 }
