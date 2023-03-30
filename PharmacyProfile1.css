@@ -1,80 +1,268 @@
-<html>
-<head>
-<link rel="stylesheet" href="PharmacyProfile1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
-</head>
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
 
+.header {
+  padding: 70px;
+    min-width: 2000px;
+  background: #E55246;
+  color: white;
+    position: absolute; left: -20px; top: -5px;
+}
 
-<div class="header"></div> 
-
-<hr class="perpendicular-line">
-
-<div class="card"><div style = "position:absolute; left:-300px; top:156px;"></div>
+.card {
+    position: absolute; left: 190px;
+  margin: auto;
+  text-align: center;
     
-    <div class= "img"><img src="avatar-f.jpg" alt="Name" style="width:20%" ></div>
-    
- <div class="width"><h1>Customer Name</h1></div><br /> 
-  <p class="Bio">Bio
-   <br> - Address
-    <br>-Details About Pharmacy
-    <br>- Legitimacy etc.</p>
-</div>
+}
+.width {
+    position: absolute; top:-150px; left: 510px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
 
-    
-    <body>
-    
-    <div id="Categories">
-                <div class="Category">
-                    <a href="#"><h3>Category 1</h3></a>
-                </div>
-                <div class="Category">
-                    <a href="#"><h3>Category 2</h3></a>
-                </div>
-                <div class="Category">
-                    <a href="#"><h3>Category 3</h3></a>
-                </div>
-                <div class="Category">
-                    <a href="#"><h3>Category 4</h3></a>
-                </div>
-                <div class="Category">
-                    <a href="#"><h3>Category 5</h3></a>
-                </div>
-                <div class="Category">
-                    <a href="#"><h3>Category 6</h3></a>
-                </div>
-            </div>
-    
-    <div id="Medicines">
-    <div id="analgesic" class="options">
-                    <a href="#"><h3>Analgesic</h3></a>
-                </div>
-                <div id="antibiotics" class="options">
-                    <a href="#"><h3>Antibiotics</h3></a>
-                </div>
-                <div id="antihistamine" class="options">
-                    <a href="#"><h3>Antihistamine</h3></a>
-                </div>
-                <div id="decongestant" class="options">
-                    <a href="#"><h3>Decongestants</h3></a>
-                </div>
-                <div id="herbal" class="options">
-                    <a href="#"><h3>Herbal Products</h3></a>
-                </div>
-                <div id="maintenance" class="options">
-                    <a href="#"><h3>Maintenance</h3></a>
-                </div>
-                <div id="supplements" class="options">
-                    <a href="#"><h3>Supplements</h3></a>
-                </div>
-                <div id="vitamins" class="options">
-                    <a href="#"><h3>Vitamins</h3></a>
-                </div>
-        
-            </div>
-        
+div.mage > img {
+  border-radius: 50%;
+    position: relative; top: -127px; left: 120px;
+    width: -50em;
+}
 
+.Bio {
+  color: black;
+  font-size: 25px;
+    position: absolute; top: -70px; left: 510px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+}
+.perpendicular-line {
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 0;
+  transform: rotate(0deg);
+  border-color: grey;
+  position: relative; bottom: -120px;
+}
 
-    </body>
-</html>
+.item {
+    width: 20%;
+    margin: 20px;
+    /*border: 1px solid red;*/
+}
+.item:hover {
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+.link-image > img {
+    width: 100%;
+    padding-top: 10px;
+    object-fit: cover;
+    border-radius: 1px;
+    
+}
+.med-name {
+    font-weight: 300;
+}
+.med-desc {
+    padding: 8px;
+}
+.seller-tab {
+    padding: 8px 8px 0 8px;
+}
+#product-holder {
+    display: flex;
+    /*border: 1px solid red;*/
+    padding: 1em 7em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    position: relative; bottom: 120px; left: 25px;
+}
+
+#nav-buttons {
+    text-align: center;
+    /*border: 1px solid red;*/
+    margin: 2em 0 4em 0;
+}
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+.round {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    margin: 0 1em;
+}
+.round:hover {
+    opacity: 0.8;
+}
+.before {
+    background-color: var(--coolor1);
+    padding: 10px;
+}
+.after {
+    background-color: var(--coolor2);
+    padding: 10px 25px;
+}
+@media (max-width: 1200px) {
+    #search-function {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #categories-holder {
+        justify-content: center;
+    }
+    .sort-category {
+        padding: 10px;
+    }
+}
+@media (max-width: 950px) {
+    #sort-by {
+        display: inline;
+        padding: 0;
+    }
+}
+@media (max-width: 850px) {
+    .item {
+        width: 35%;
+        margin: 20px;
+    }
+    .sort-category {
+        margin: 0.3em 1em;
+    }
+}
+@media (max-width: 640px) {
+    #title-holder {
+        height: 20vh;
+    }
+    #med-category {
+        font-size: 3em;
+        padding-top: 0.5em;
+    }
+    #med-interlude {
+        padding-bottom: 0.5em;
+    }
+}
+@media (max-width: 480px) {
+    #title-holder {
+        height: 15vh;
+    }
+    #med-category {
+        font-size: 2.5em;
+    }
+    #med-interlude {
+        padding-bottom: 0.2em;
+    }
+    #sort-by {
+        font-size: 0.8em;
+    }
+    #search {
+        padding: 4px;
+        font-size: 0.6em;
+    }
+    #search-button {
+        padding: 4px 8px;
+        margin-top: 3px;
+        font-size: 0.6em;
+    }
+    .sort-category {
+        border: 2px solid var(--coolor2);
+        padding: 8px 10px;
+        font-size: 0.8em;
+        margin: 0.2em 0.7em;
+    }
+    .round {
+        font-size: 0.8em;
+        margin: 0 0.7em;
+    }
+    .before {
+        padding: 9px;
+    }
+    .after {
+        padding: 9px 20px;
+    }
+    .item {
+        width: 40%;
+        margin: 10px;
+    }
+}
+@media (max-width: 400px) {
+    #title-holder {
+        height: 10vh;
+    }
+    #med-category {
+        font-size: 2em;
+    }
+    #med-interlude {
+        font-size: 0.7em;
+        margin-bottom: 0.4em;
+    }
+    .sort-category {
+        font-size: 0.6em;
+        border-radius: 20px;
+        margin: 0 0.5em;
+    }
+    .seller-tab {
+        padding: 5px 5px 0 5px;
+    }
+    .seller-name {
+        font-size: 0.7em;
+    }
+    .med-name {
+        font-weight: 300;
+        font-size: 0.8em;
+    }
+    .med-desc {
+        padding: 5px;
+    }
+    .med-price {
+        font-size: 0.8em;
+    }
+}
+
+#Categories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 120px;
+    grid-gap: 1.4em;
+    padding: 10em 10em;
+    width: 100em;
+    font-family: 'Rubik', sans-serif;
+}
+.Category {
+   
+    text-align: center;
+    border-radius: 30px;
+    outline: 4px solid #0198fa;
+  padding: 20px 20px;
+  border: 5px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+    height: 20px;
+}
+.Category > a {
+    position: relative; 
+    top: -70%;
+    color: black;
+    text-decoration: none;
+}
+.Category:hover {
+    background-color: var(--coolor1);
+    outline: 0px solid transparent;
+  padding: 20px 20px;
+  border: 5px solid #0198fa;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
