@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My Address Book | User</title>
-        <link rel="stylesheet" href="css/styles_myaddressdef.css">
+        <link rel="stylesheet" href="../css/styles_myaddressdef.css">
+        <link rel="stylesheet" href="../css/styles_loginnavie.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
@@ -27,9 +28,23 @@
 
             <div class="body-box">
                 <h3 class="body-title">My Address Book</h3>
-                <p class="body-detail">Shipping Address</p>
+                <p class="body-detail">Default Address</p>
                 <hr>
                 <div class="personal-forms">
+                    <form>
+                    <div id="address-box">
+                        <h4 class="address-main-value">Aramie Moroguso</h4>
+                        <p class="address-sub-value">09099909090</p>
+                        <p class="address-sub-value">51 Bacolod Street</p>
+                        <p class="address-sub-value">Baranggay San Roque, Marikina City, Metro Manila, 1801</p>
+                    </div>
+                    <div id="button-container">
+                        <a href="user_myaddress.html" id="edit" target="_self">Edit address</a>                    </div>
+                </form>
+                <p class="body-detail">Other Address</p>
+                <hr>
+                <div class="personal-forms">
+                    <form>
                     <div id="address-box">
                         <h4 class="address-main-value">Aramie Moroguso</h4>
                         <p class="address-sub-value">09099909090</p>
@@ -38,9 +53,13 @@
                     </div>
                     <div id="button-container">
                         <a href="user_myaddress.html" id="edit" target="_self">Edit address</a>
-                        <a href="user_newaddress.html" id="add" target="_self">Add another address</a>
+                        <button type="submit" id="add" target="_self">Set as default address</a>
                     </div>
+                </form>
                 </div>
+            </div>
+            <div id="button-container">
+                <a href="user_myaddress.html" id="edit" target="_self">Add another address</a>                    
             </div>
         </div>
     </body>
