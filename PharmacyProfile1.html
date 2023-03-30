@@ -1,134 +1,174 @@
-:root {
-    --coolor1: #3FBFDA;
-    --coolor2: #E55246;
-    --coolor3: #11333A;
-    --coolor4: #F0F0F0;
-}
+<html>
+<head>
+<link rel="stylesheet" href="PharmacyProfile1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
 
-.header {
-  padding: 70px;
-    min-width: 2000px;
-  background: #E55246;
-  color: white;
-    position: absolute; left: -20px; top: -5px;
-}
 
-.card {
-    position: absolute; left: 190px;
-  margin: auto;
-  text-align: center;
+<div class="header"></div> 
+
+<hr class="perpendicular-line">
+
+<div class="card"><div style = "position:absolute; left:-300px; top:156px;"></div>
     
-}
-.width {
-    position: absolute; top:-130px; left: 610px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #11333A;
-    background: #3FBFDA;
-      font-size: 11px;
-}
-
-img {
-  border-radius: 50%;
-    position: relative; top: -110px; left: 230px;
-    border: 2px solid #11333A;
-    width: -100em;
-}
-
-.Bio {
-  color: black;
-  font-size: 25px;
-    position: absolute; top: -70px; left: 609px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #11333A;
-    background: #3FBFDA;
-}
-.perpendicular-line {
-  width: 90%;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 0;
-  transform: rotate(0deg);
-  border-color: grey;
-  position: relative; bottom: -90px;
-}
-
-#Medicines {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 205px 215px;
-    grid-gap: 5em;
-    padding: 1em 15em;
-    width: 90em; 
-   position: absolute; bottom: -18em;
-}
-
-.options {
-    background-color: var(--coolor3);
-    text-align: center;
-    border-radius: 5px;
-  outline: 1px solid #0198fa;
-  padding: 10px 10px;
-  border: 5px solid transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.options > a {
-    position: relative;
-    top: 30%;
-    color: white;
-    text-decoration: none;
-    font-size: 150%;
+    <div class= "mage">
+        <img src="avatar-f.jpg" alt="Name" style="width:25%" >
+    </div>
     
-}
-.options > img {
-    width: auto;
-    height: 180px;
-    border-radius: 5px;
-}
-.options:hover {
-    background-color: var(--coolor1);
-    outline: 0px solid transparent;
-  padding: 20px 20px;
-  border: 5px solid #0198fa;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+ <div class="width"><h1>Pharmacy Name</h1></div><br /> 
+  <p class="Bio">Bio
+    <br>-Address
+    <br>-Details About Pharmacy
+    <br>- Legitimacy etc.</p>
+</div>
 
-#Categories {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 150px 150px;
-    grid-gap: 2em;
-    padding: 10em 10em;
-    width: 100em;
-}
-.Category {
-    background-color: var(--coolor3);
-    text-align: center;
-    border-radius: 5px;
-    outline: 1px solid #0198fa;
-  padding: 20px 20px;
-  border: 5px solid transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-    height: 20px;
-}
-.Category > a {
-    position: relative; 
-    top: -70%;
-    color: white;
-    text-decoration: none;
-}
-.Category:hover {
-    background-color: var(--coolor1);
-    outline: 0px solid transparent;
-  padding: 20px 20px;
-  border: 5px solid #0198fa;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+    
+    <body>
+    
+    <div id="Categories">
+                <div class="Category">
+                    <a href="#"><h3>Analgesic</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Antibiotics</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Antihistamine</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Decongestants</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Herbal Products</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Maintenance</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Supplements</h3></a>
+                </div>
+                <div class="Category">
+                    <a href="#"><h3>Vitamins</h3></a>
+                </div>
+            </div>
+    
+   <div id="product-holder">
+    
+                <div class="item">
+                    <div class="seller-tab">
+                        <p class="seller-name"></p>
+                    </div>
+                    <a href="aboutus.html" class="link-image">
+                        <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;" >
+                    </a>
+                    <div class="med-desc">
+                        <p class="med-name">Name of Medicine</p>
+                        <h4 class="med-price">Price</h4>
+                        <p class="med-name">In Stock</p>
+                    </div>
+                </div>
+            
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
 
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name"></p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="analgesic2.jpg" alt="Medicine Sample" style="width: 80%; position: relative; left: 35px;">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Name of Medicine</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+        
+
+
+    </body>
+</html>
