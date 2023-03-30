@@ -20,13 +20,14 @@
 #headerpage {
     font-weight: 500px;
     font-size: 2.5em;
-    padding: 3em 3em 1em 3em;
+    padding: 2em 2em 1em 2em;
 }
 .nav-box, body {
     background-color: var(--coolor4);
 }
 .nav-box {
     width: 30vw;
+    
 }
 i {
     color: var(--coolor2);
@@ -52,7 +53,7 @@ i {
     /*border: 2px solid black;*/
     padding: 1em;
     width: 65vw;
-    height: 80vh;
+    height: fit-content;
 }
 hr {
     width: 90%;
@@ -65,7 +66,6 @@ hr {
 }
 #button-container {
     text-align: right;
-    /*border: 2px solid black;*/
     padding: 1.3em 0;
 }
 #button-container > a {
@@ -76,11 +76,21 @@ hr {
     margin: 10px 0;
     width: 15%;
 }
+#button-container > button {
+    border: none;
+    padding: .75em 1em;
+    text-decoration: none;
+    color: black;
+    font-weight:390;
+    margin: 10px 0;
+    width: wrap;
+}
+
 #edit, #add {
     background-color: var(--coolor2);
     border-radius: 5px;
 }
-#edit:hover, #add:hover {
+#edit:hover, #add:hover{
     opacity: 0.8;
 }
 .address-sub-value {
