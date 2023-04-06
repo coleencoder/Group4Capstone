@@ -1,0 +1,94 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+*, *::before, *::after {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--coolor4);
+}
+.content {
+    font-weight: 300;
+}
+h1 {
+    padding-bottom: 0.5em;
+}
+#button {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    background-color: var(--coolor2);
+}
+.modal {
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+.pop-up {
+    background-color: white;
+    margin: 15em auto;
+    padding: 2em;
+    width: 70%;
+    animation-name: fromthetop;
+    animation-duration: 0.5s;
+}
+@keyframes fromthetop {
+    from {margin: -15em auto; opacity: 0;}
+    to {margin: 15em auto; opacity: 1;}
+}
+#one-more-stop {
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.close:hover, .close:focus {
+    cursor: pointer;
+    color: var(--coolor2);
+}
+#center-gotit {
+    text-align: center;
+}
+#got-it {
+    background-color: var(--coolor1);
+    padding: 0.5em 0.8em;
+    width: 155px;
+    margin-top: 0.5em;
+    border: none;
+    border-radius: 10px;
+}
+#got-it:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media (max-width: 550px) {
+    h2 {
+        font-size: 1.2em;
+        padding-bottom: 0.2em;
+    }
+    .content {
+        font-size: 0.8em;
+    }
+    #got-it {
+        font-size: 0.8em;
+        margin-top: 1.5em;
+        padding: 0.3em 0.5em;
+        width: 100px;
+    }
+}
