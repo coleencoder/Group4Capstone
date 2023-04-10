@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Edit Item | Pharmacy</title>
+        <link rel="stylesheet" href="css/styles_edititem.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div id="title-head">
+            <h2>Edit Item</h2>
+        </div>
+            <div id="add-item-portion">
+                <form action="/action.page.php">
+                    <div id="add-photo">
+                        <label for="input-photo" id="input-label">
+                            Select a photo <br>
+                            <i class="fa fa-camera"></i>
+                            <input id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png">
+                            <br>
+                            <!--<span id="filename"></span>-->
+                            <div id="for-preview">
+                                <img src="" alt="" id="preview-image">
+                            </div>
+                        </label>
+                    </div>
+
+                    <script type="text/javascript">
+                        function showPreview(event){
+                        if(event.target.files.length > 0){
+                            var src = URL.createObjectURL(event.target.files[0]);
+                            var preview = document.getElementById("preview-image");
+                            preview.src = src;
+                            preview.style.display = "block";
+                            preview.style.textAlign = "center";
+                            preview.style.margin = "auto";
+                            }
+                        }
+                    </script>
+
+                    <div id="item-details">
+                        <h3 class="portion-title">About the Item</h3>
+                        <select name="med-category" class="item-detail" required>
+                            <option value="Select a category">Select a Category</option>
+                            <option value="Analgesic">Analgesic</option>
+                            <option value="Antibiotic">Antibiotic</option>
+                            <option value="Antihistamine">Antihistamine</option>
+                            <option value="Decongestant">Decongestant</option>
+                            <option value="Herbal Products">Herbal Products</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Prescripted Drugs">Prescripted Drugs</option>
+                            <option value="Supplements">Supplements</option>
+                            <option value="Vitamins">Vitamins</option>
+                        </select>
+                        <input type="text" class="item-detail" placeholder="Name of Item" required>
+                        <div id="item-pricing">
+                            <label for="item-price" class="for-description">Price</label>
+                            <div id="item-pricing-breakdown">
+                                <span id="pesos">PHP</span>
+                                <input id="item-price" name="item-price" type="text" inputmode="numeric" placeholder="Price of the item" required>
+                            </div>
+                        </div>
+                        <div id="item-desc">
+                            <label for="description" class="for-description">Description</label>
+                            <textarea id="description" name="description" placeholder="Describe the item and include any details that the buyer may find interesting!"></textarea>
+                        </div>
+                        <div id="center-button">
+                            <button type="submit" id="post">Save Changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </body>
+</html>
