@@ -41,21 +41,7 @@
                             preview.style.margin = "auto";
                             }
                         }
-                        //var input = document.getElementById( 'input-photo' );
-                        //var infoArea = document.getElementById( 'filename' );
-
-                            //input.addEventListener( 'change', showFileName );
-
-                        //function showFileName( event ) {
-  
-                        // the change event gives us the input it occurred in 
-                        //var input = event.srcElement;
-  
-                        // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
-                        //var fileName = input.files[0].name;
-  
-                        // use fileName however fits your app best, i.e. add it into a div
-                        //infoArea.textContent = 'File name: ' + fileName;}
+                        
                     </script>
 
                     <div id="item-details">
@@ -73,12 +59,16 @@
                             <option value="Vitamins">Vitamins</option>
                         </select>
                         <input type="text" class="item-detail" placeholder="Name of Item" required>
-                        <div id="item-pricing">
+                        <div class="item-pricing-q">
                             <label for="item-price" class="for-description">Price</label>
                             <div id="item-pricing-breakdown">
                                 <span id="pesos">PHP</span>
                                 <input id="item-price" name="item-price" type="text" inputmode="numeric" placeholder="Price of the item" required>
                             </div>
+                        </div>
+                        <div class="item-pricing-q">
+                            <label for="quantity" id="howmany">Quantity</label>
+                            <input id="item-quan" name="quantity" type="number" inputmode="numeric" required>
                         </div>
                         <div id="item-desc">
                             <label for="description" class="for-description">Description</label>
