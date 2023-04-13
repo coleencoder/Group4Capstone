@@ -1,0 +1,123 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    /*em = based on previously stated measurement, or the default 16px*/
+}
+#product-section {
+    background-color: var(--coolor2);
+    text-align: center;
+    height: 35vh;
+}
+#product-section > h2 {
+    position: relative;
+    top: 30%;
+    color: var(--coolor3);
+    font-weight: 800;
+    font-size: 4em;
+}
+.shop-intro {
+    text-align: center;
+    padding: 10em;
+    /*border: 2px solid magenta;*/
+}
+.shop-intro > h3 {
+    font-size: 2em;
+    color: var(--coolor3);
+}
+#categories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 180px 185px;
+    grid-gap: 9em 5em;
+    padding: 0em 9em;
+} 
+
+.options {
+    background-color: var(--coolor3);
+    text-align: center;
+    border-radius: 5px;
+    height: 150%;
+}
+
+.options > h3 {
+    position: relative;
+    top: 90%;
+    color: white;
+    text-decoration: underline;
+}
+.options > a {
+    width: auto;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.options:hover {
+    background-color: var(--coolor1);
+}
+
+#pharmacies {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 180px 180px;
+    grid-gap: 1em;
+    padding: 1em 2em;
+    /*padding: 1em;*/
+    /*border: 3px solid cyan;*/
+}
+.pharma-name {
+    background-color: var(--coolor3);
+    text-align: center;
+    border-radius: 5px;
+    /*border: 3px solid cyan;*/
+}
+.pharma-name > a {
+    position: relative;
+    top: 45%;
+    color: white;
+    text-decoration: none;
+}
+.pharma-name:hover {
+    background-color: var(--coolor1)
+}
+#go-back {
+    text-align: center;
+    margin: 30px 0;
+}
+#go-back-button {
+    text-decoration: none;
+    background-color: var(--coolor2);
+    color: var(--coolor3);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+}
+@media (max-width: 900px) {
+    #categories {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 180px 180px 180px;
+        grid-gap: 15px;
+        padding: 1em 2em;
+    }
+}
+@media (max-width: 720px) {
+    #categories {
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-gap: 15px;
+        padding: 1em 2em;
+    }
+    #pharmacies {
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 200px 200px;
+        grid-gap: 15px;
+        padding: 1em 2em;
+    }
+    
+}
