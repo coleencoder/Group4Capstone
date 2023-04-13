@@ -1,0 +1,252 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*em = based on previously stated measurement, or the default 16px*/
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--coolor4);
+}
+#title-holder {
+    text-align: center;
+    height: 35vh;
+    /*border: 1px solid red;*/
+}
+#med-category {
+    color: var(--coolor3);
+    font-weight: 800;
+    font-size: 4em;
+    padding-top: 0.8em;
+    padding-bottom: 0.2em;
+}
+#med-interlude {
+    color: var(--coolor3);
+    font-weight: 300;
+}
+#categories-holder {
+    display: flex;
+    padding: 0.5em;
+    margin: 1em 0;
+}
+#sort-by {
+    font-weight: 300;
+    margin-top: 0.8em;
+    padding: 0 4em;
+}
+.sort-category {
+    border: 2px solid var(--coolor2);
+    padding: 10px 12px;
+    border-radius: 20px;
+    margin: 0 1em;
+}
+.sort-category:hover {
+    background: var(--coolor2);
+    color: white;
+    cursor: pointer;
+}
+#search-function {
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin-right: 1.3em;
+}
+#search {
+    padding: 6px;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+}
+#search-button {
+    padding: 6px 10px;
+    margin-top: 5px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+#search-button:hover {
+    background: #CCC;
+}
+.item {
+    width: 20%;
+    margin: 20px;
+    /*border: 1px solid red;*/
+}
+.item:hover {
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+.link-image > img {
+    width: 100%;
+    padding-top: 10px;
+    object-fit: cover;
+    height: 50%;
+}
+.med-name {
+    font-weight: 300;
+}
+.med-desc {
+    padding: 8px;
+}
+.seller-tab {
+    padding: 8px 8px 0 8px;
+}
+#product-holder {
+    display: flex;
+    /*border: 1px solid red;*/
+    padding: 1.5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+#nav-buttons {
+    text-align: center;
+    /*border: 1px solid red;*/
+    margin: 2em 0 4em 0;
+}
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+.round {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    margin: 0 1em;
+}
+.round:hover {
+    opacity: 0.8;
+}
+.before {
+    background-color: var(--coolor1);
+    padding: 10px;
+}
+.after {
+    background-color: var(--coolor2);
+    padding: 10px 25px;
+}
+@media (max-width: 1200px) {
+    #search-function {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #categories-holder {
+        justify-content: center;
+    }
+    .sort-category {
+        padding: 10px;
+    }
+}
+@media (max-width: 950px) {
+    #sort-by {
+        display: inline;
+        padding: 0;
+    }
+}
+@media (max-width: 850px) {
+    .item {
+        width: 35%;
+        margin: 20px;
+    }
+    .sort-category {
+        margin: 0.3em 1em;
+    }
+}
+@media (max-width: 640px) {
+    #title-holder {
+        height: 20vh;
+    }
+    #med-category {
+        font-size: 3em;
+        padding-top: 0.5em;
+    }
+    #med-interlude {
+        padding-bottom: 0.5em;
+    }
+}
+@media (max-width: 480px) {
+    #title-holder {
+        height: 15vh;
+    }
+    #med-category {
+        font-size: 2.5em;
+    }
+    #med-interlude {
+        padding-bottom: 0.2em;
+    }
+    #sort-by {
+        font-size: 0.8em;
+    }
+    #search {
+        padding: 4px;
+        font-size: 0.6em;
+    }
+    #search-button {
+        padding: 4px 8px;
+        margin-top: 3px;
+        font-size: 0.6em;
+    }
+    .sort-category {
+        border: 2px solid var(--coolor2);
+        padding: 8px 10px;
+        font-size: 0.8em;
+        margin: 0.2em 0.7em;
+    }
+    .round {
+        font-size: 0.8em;
+        margin: 0 0.7em;
+    }
+    .before {
+        padding: 9px;
+    }
+    .after {
+        padding: 9px 20px;
+    }
+    .item {
+        width: 40%;
+        margin: 10px;
+    }
+}
+@media (max-width: 400px) {
+    #title-holder {
+        height: 10vh;
+    }
+    #med-category {
+        font-size: 2em;
+    }
+    #med-interlude {
+        font-size: 0.7em;
+        margin-bottom: 0.4em;
+    }
+    .sort-category {
+        font-size: 0.6em;
+        border-radius: 20px;
+        margin: 0 0.5em;
+    }
+    .seller-tab {
+        padding: 5px 5px 0 5px;
+    }
+    .seller-name {
+        font-size: 0.7em;
+    }
+    .med-name {
+        font-weight: 300;
+        font-size: 0.8em;
+    }
+    .med-desc {
+        padding: 5px;
+    }
+    .med-price {
+        font-size: 0.8em;
+    }
+}
