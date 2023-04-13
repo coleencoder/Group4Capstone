@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Complete | Pharmacy</title>
+        <link rel="stylesheet" href="css/styles_pharmacyprofcomplete2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <h2>Complete your Account</h2>
+        <form id="complete-form" action="/action.page.php">
+            <div class="master-tab">
+                <!--<div class="tab">
+                    <h3>Upload a photo of your pharmacy</h3>
+                    <p>This could be your pharmacy's logo and name, or the facade of the pharmacy.
+                        This image will appear on the customer's end</p>
+                        <div class="input-holder">
+                            <label for="input-pharm" class="input-label">
+                                Select a photo <br>
+                                <i class="fa fa-camera"></i>
+                                <input id= "input-pharm" type="file" accept="image/jpg, image/png, image/jpeg" required onchange="showPreview(event);">
+                                <br>
+                                <div class="for-preview">
+                                    <img src="" alt="" id="preview-image">
+                                </div>
+                            </label>
+                        </div>
+                </div>-->
+                <div class="tab">
+                    <h3>Add a profile picture</h3>
+                    <p>This will serve as your account's icon.</p>
+                        <div class="input-holder">
+                            <label for="input-pharm" class="input-label">
+                                Select a photo <br>
+                                <i class="fa fa-camera"></i>
+                                <input id= "input-pharm" class="input" type="file" accept="image/jpg, image/png, image/jpeg" required onchange="showPreview(event);">
+                                <br>
+                                <div class="for-preview">
+                                    <img src="" alt="" id="preview-image">
+                                </div>
+                            </label>
+                        </div>
+                </div>
+
+                <div class="tab">
+                <h3>Write a short bio</h3>
+                <p>This could be your pharmacy's tagline, or a short description of
+                    about what makes your pharmacy unique!</p>
+                        <textarea id="bio" class="input"  name="bio" placeholder="Write a short bio..." required></textarea>
+                </div>
+
+                <div class="tab">
+                <h3>Upload a proof of your pharmacy's legitimacy</h3>
+                <p>This could be a file or a photo of your business permit, or other
+                    document that legalizes the operation of your pharmacy.</p>
+                    <div class="input-holder">
+                        <label for="input-legit" class="input-label">
+                            Select a file <br>
+                            <i class="fa fa-file"></i>
+                            <input id="input-legit" class="input" type="file" accept="image/jpg, image/png, image/jpeg, .doc, .docx, .pdf" required onchange="showFileName(event);">
+                            <br>
+                            <span id="filename"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a id="go-back" href="pharmacyprofile_fresh.html">Go Back</a>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+        <script type="text/javascript">
+            function showPreview(event){
+                if(event.target.files.length > 0){
+                    var src = URL.createObjectURL(event.target.files[0]);
+                    var preview = document.getElementById("preview-image");
+                    preview.src = src;
+                    preview.style.display = "block";
+                    preview.style.textAlign = "center";
+                    preview.style.margin = "auto";
+                    }
+                }
+
+            var input = document.getElementById('input-photo');
+            var infoArea = document.getElementById('filename');
+            input.addEventListener('change', showFileName);
+            function showFileName(event) {
+            // the change event gives us the input it occurred in 
+             var pics = event.srcElement;
+  
+            // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+            var fileName = pics.files[0].name;
+            infoArea.textContent = 'File name: ' + fileName;}
+        </script>
+    </body>
+</html>
