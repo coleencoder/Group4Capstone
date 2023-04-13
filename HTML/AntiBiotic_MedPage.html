@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Medicine | ALMed</title>
+        <link rel="stylesheet" href="AntiBiotic_MedPage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="title-holder">
+            <h2 id="med-category">Medicine Category</h2>
+            <p id="med-interlude">Some interlude on what the medicine does...</p>
+        </div>
+
+        <div id="categories-holder">
+            <p id="sort-by">Sort by</p>
+            <form action="/action_page.php">
+                <button type="submit" class="sort-category">Generic</button>
+                <button type="submit" class="sort-category">Branded</button>
+                <button type="submit" class="sort-category">Best selling</button>
+                <button type="submit" class="sort-category">Lowest to highest price</button>
+                <button type="submit" class="sort-category">A to Z</button>
+                <button type="submit" class="sort-category">Z to A</button>
+
+                <div id="search-function">
+                    <input type="text" placeholder="Search medicine..." id="search">
+                    <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+            <!--<div class="sort-category">Generic</div>
+            <div class="sort-category">Branded</div>
+            <div class="sort-category">Non-drowse</div>
+            <div class="sort-category">Prescripted</div>
+            <div id="search-function">-->
+        </div>
+
+        <div id="product-holder">
+    
+                <div class="item">
+                    <div class="seller-tab">
+                        <p class="seller-name">Name of Seller</p>
+                    </div>
+                    <a href="aboutus.html" class="link-image">
+                        <img src="trimycin%20-h.PNG" alt="Trimycin-h">
+                    </a>
+                    <div class="med-desc">
+                        <p class="med-name">Trimycin-h</p>
+                        <h4 class="med-price">Price</h4>
+                        <p class="med-name">In Stock</p>
+                    </div>
+                </div>
+            
+            <div class="item">
+                <div class="seller-tab">
+                    <p class="seller-name">Name of Seller</p>
+                </div>
+                <a href="aboutus.html" class="link-image">
+                    <img src="trimycin.PNG" alt="Trymycin">
+                </a>
+                <div class="med-desc">
+                    <p class="med-name">Trymycin</p>
+                    <h4 class="med-price">Price</h4>
+                    <p class="med-name">In Stock</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div id="nav-buttons">
+            <a href="#" class="before round">&laquo; Previous</a>
+            <a href="#" class="after round">Next &raquo;</a>
+        </div>
+    </body>
+</html>
