@@ -30,7 +30,7 @@
                                 </div>
                             </label>
                         </div>
-                </div>-->
+                </div>
                 <div class="tab">
                     <h3>Add a profile picture</h3>
                     <p>This will serve as your account's icon.</p>
@@ -52,7 +52,7 @@
                 <p>This could be your pharmacy's tagline, or a short description of
                     about what makes your pharmacy unique!</p>
                         <textarea id="bio" class="input"  name="bio" placeholder="Write a short bio..." required></textarea>
-                </div>
+                </div>-->
 
                 <div class="tab">
                 <h3>Upload a proof of your pharmacy's legitimacy</h3>
@@ -76,17 +76,6 @@
             </div>
         </form>
         <script type="text/javascript">
-            function showPreview(event){
-                if(event.target.files.length > 0){
-                    var src = URL.createObjectURL(event.target.files[0]);
-                    var preview = document.getElementById("preview-image");
-                    preview.src = src;
-                    preview.style.display = "block";
-                    preview.style.textAlign = "center";
-                    preview.style.margin = "auto";
-                    }
-                }
-
             var input = document.getElementById('input-photo');
             var infoArea = document.getElementById('filename');
             input.addEventListener('change', showFileName);
