@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles_viewprofile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <h2 id="pharma-name">Pharmacy Name</h2>
+            <p id="address">100 Address Street, San Roque, Marikina City 1900</p>
+            <img id="pharma-icon" src="D:\Documents\HTML CAPSTONE\images\avatar-f.jpg">
+        </div>
+        <div id="a-holder">
+            <a href="" id="editprofile">Edit Profile</a>
+        </div>
+        <br>
+        <div id="pharma-bio">
+            <p class="pharma-text">Welcome to our pharmacy! We make sure your medicines are stored well and up to date.</p>
+            <p class="special-text">This pharmacy is legally permitted by the DTI.</p>
+        </div>
+        <div id="master-tab">
+            <div id="pharma-nav">
+                <button class="pharma-bot" onclick="openTab('products')">Products</button>
+                <button class="pharma-bot" onclick="openTab('reviews')">Reviews</button>
+            </div>
+            <div id="products" class="tab">
+                <div id="categories">
+                    <h4>Categories</h4>
+                    <a href="#" class="type-of-med">Analgesics</a>
+                    <a href="#" class="type-of-med">Antibiotics</a>
+                    <a href="#" class="type-of-med">Antihistamine</a>
+                    <a href="#" class="type-of-med">Decongestants</a>
+                    <a href="#" class="type-of-med">Herbal Products</a>
+                    <a href="#" class="type-of-med">Maintenance</a>
+                    <a href="#" class="type-of-med">Prescripted Drugs</a>
+                    <a href="#" class="type-of-med">Supplements</a>
+                    <a href="#" class="type-of-med">Vitamins</a>
+                    <a href="#" class="type-of-med">Others</a>
+                </div>
+
+                <div id="pharma-products">
+                    <div id="navigator">
+                        <p id="sort-by">Sort by</p>
+                        <form action="/action_page.php">
+                            <button type="submit" class="sort-category">Generic</button>
+                            <button type="submit" class="sort-category">Branded</button>
+                            <button type="submit" class="sort-category">Lowest to highest price</button>
+                            <button type="submit" class="sort-category">A to Z</button>
+                            <button type="submit" class="sort-category">Z to A</button>
+                        <div id="search-function">
+                            <input type="text" placeholder="Search medicine..." id="search">
+                            <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                        </div>
+                        </form>
+                    </div>
+                    <div id="grid-of-products">
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="aboutus.html" class="link-image">
+                                <img id="med-img" src="D:\Documents\HTML CAPSTONE\images\samplemed.jpg" alt="Medicine Sample">
+                            </a>
+                            <div class="med-desc">
+                                <p class="med-name">Name of Medicine</p>
+                                <h4 class="med-price">Price</h4>
+                                <p class="med-name">In Stock</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-number">
+                        <a href="#" class="page">&laquo;</a>
+                        <a href="#" class="page">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">&raquo;</a>
+                    </div>
+                </div>  
+            </div>
+            <div id="reviews"  class="tab">
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function openTab(tabName) {
+            var i;
+            var bot = document.getElementsByClassName("tab");
+            for (i = 0; i < bot.length; i++) {
+                bot[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "flex";
+            }
+        </script>
+    </body>
+</html>
