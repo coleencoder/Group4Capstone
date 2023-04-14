@@ -1,0 +1,310 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #fc8e33;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#header {
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(120deg,
+        var(--coolor3) 0%,
+        var(--coolor5) 49%,
+        var(--coolor1) 100%
+        );
+    height: 230px;
+}
+#pharma-name {
+    padding-top: 1em;
+    font-size: 3em;
+}
+#pharma-icon {
+    position: relative;
+    top: 1em;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+    border: 1em solid white;
+}
+#a-holder {
+    text-align: center;
+    position: relative;
+    top: 8.5em;
+}
+#a-holder:hover {
+    cursor: pointer;
+}
+#editprofile {
+    text-decoration: none;
+    color: black;
+    clear: right;
+    padding: 0.5em 1em;
+    background-color: var(--coolor4);
+    border-radius: 10px;
+}
+#editprofile:hover {
+    background-color: var(--coolor1);
+    transition: ease-in-out .3s all;
+}
+#pharma-bio {
+    margin: 9em auto 1em auto;
+    padding: 0.5em;
+    width: 75%;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+.special-text {
+    font-style: italic;
+}
+#pharma-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--coolor3);
+}
+.pharma-bot {
+    border: none;
+    color: white;
+    background-color: var(--coolor3);
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.pharma-bot:hover {
+    color: var(--coolor5);
+    transition: ease-in-out .3s all;
+}
+#master-tab {
+    background-color: var(--coolor4);
+}
+#products {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#categories {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    /*border: 1px solid black;*/
+}
+#categories > h4 {
+    font-size: 1.5em;
+    padding: 2.5em 1em 1em 0.5em;
+}
+.type-of-med {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 1em;
+}
+.type-of-med:hover {
+    background-color: var(--coolor2);
+}
+#navigator {
+    display: flex;
+    align-items: baseline;
+    padding: 0.5em;
+}
+#sort-by {
+    font-weight: 300;
+}
+.sort-category {
+    border: 2px solid var(--coolor2);
+    padding: 0.3em 0.6em;
+    border-radius: 20px;
+    margin: 0 0.5em;
+}
+.sort-category:hover {
+    background: var(--coolor2);
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s all;
+}
+#search-function {
+    display: inline;
+    position: absolute;
+    margin-top: -0.5em;
+    margin-right: 0.5em;
+    right: 0;
+}
+#search {
+    padding: 6px;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    border: 1px solid #ddd;
+}
+#search-button {
+    padding: 6px 10px;
+    margin-top: 5px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+#search-button:hover {
+    transition: ease-in-out .3s all;
+    background: #CCC;
+}
+#grid-of-products {
+    display: flex;
+    /*border: 1px solid red;*/
+    padding: 1.5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.item {
+    width: 20%;
+    margin: 1.5em;
+    /*border: 1px solid red;*/
+}
+.item:hover {
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+.link-image > img {
+    width: 100%;
+    object-fit: cover;
+}
+.med-name {
+    font-weight: 300;
+}
+.med-desc {
+    padding: 8px;
+}
+#page-number {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.2em 0.5em;
+}
+.page {
+    margin: 0 0.2em;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.6em 1em;
+    color: black;
+}
+.page:hover, .page:active {
+    background-color: var(--coolor2);
+}
+#reviews {
+    display: none;
+}
+@media (max-width: 1200px) {
+    #search-function {
+        margin-top: 1.7em;
+    }
+    .item {
+        margin: 1em;
+    }
+}
+@media (max-width: 950px) {
+    .item {
+        width: 25%;
+    }
+}
+@media (max-width: 640px) {
+    #categories {
+        width: 20%;
+        /*border: 1px solid black;*/
+    }
+    #categories > h4 {
+        font-size: 1.2em;
+    }
+    .type-of-med {
+        font-size: 0.8em;
+    }
+    #sort-by {
+        padding-bottom: 1em;
+    }
+    #navigator {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2em;
+    }
+    .item {
+        width: 40%;
+    }
+    #search {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    #search-button {
+        padding: 5px 8px;
+        font-size: 0.8em;
+    }
+    .sort-category {
+        border: 2px solid var(--coolor2);
+        font-size: 0.8em;
+        padding: 0.3em 0.5em;
+        margin: 0.2em 0.2em;
+    }
+}
+@media (max-width: 480px) {
+    #header {
+        height: 200px;
+    }
+    #pharma-name {
+        padding-top: 0.7em;
+        font-size: 2.5em;
+    }
+    #pharma-icon {
+        width: 150px;
+    }
+    #a-holder {
+        top: 5.5em;
+    }
+    #pharma-bio {
+        margin-top: 5em;
+        margin-bottom: 0.5em;
+        width: 85%;
+    }
+    .item {
+        width: 65%;
+        margin: 0.5em;
+    }
+}
+@media (max-width: 400px) {
+    #pharma-name {
+        font-size: 2em;
+    }
+    #address {
+        font-size: 0.7em;
+    }
+    #header {
+        height: 180px;
+    }
+    #categories > h4 {
+        padding-top: 0.5em;
+    }
+    .sort-category {
+        border: 1px dotted var(--coolor3);
+    }
+    #categories {
+        width: 100%;
+        position: static;
+        height: 23vh;
+        overflow: scroll;
+    }
+    #products {
+        flex-direction: column;
+    }
+    .page {
+        font-size: 0.7em;
+        padding: 0.4em 0.8em;
+    }
+}
