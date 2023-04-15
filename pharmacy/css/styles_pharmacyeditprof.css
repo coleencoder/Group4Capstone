@@ -1,0 +1,110 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #fc8e33;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+h2 {
+    background: linear-gradient(120deg,
+    var(--coolor3) 0%,
+    var(--coolor5) 49%,
+    var(--coolor1) 100%
+    );
+    color: white;
+    font-size: 3.5em;
+    padding: 1em 0;
+    text-align: center;
+}
+body {
+    background-color: var(--coolor4);
+}
+.label-for-header {
+    display: block;
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+.label-for-input {
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.label-for-input:hover {
+    cursor: pointer;
+    color: var(--coolor1);
+    transition: ease-in-out .3s all;
+}
+#changeicon {
+    display: none;
+}
+.edit {
+    margin: 1em auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 75%;
+}
+.input-text {
+    display: block;
+    margin: 1em auto;
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    width: 75%;
+    font-weight: 300;
+    border: none;
+}
+#icon {
+    width: 170px;
+    border-radius: 50%;
+}
+#edit-icon {
+    text-align: center;
+}
+#changebio {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em;
+    resize: vertical;
+    font-size: 1em;
+    width: 75%;
+    font-weight: 300;
+    border: none;
+}
+#button {
+    margin: 1em auto;
+    width: 50%;
+    text-align: center;
+}
+#submit {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    background-color: var(--coolor3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: var(--coolor1);
+    color: var(--coolor3);
+    transition: ease-in-out .3s all;
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+    }
+    .label-for-header {
+        padding-left: 0.7em;
+        font-size: 1.2em;
+    }
+    .label-for-input {
+        font-size: 1.2em;
+    }
+}
