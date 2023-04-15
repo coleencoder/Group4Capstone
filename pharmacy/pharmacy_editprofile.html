@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Edit Profile | Pharmacy</title>
+        <link rel="stylesheet" href="css/styles_pharmacyeditprof.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h2>Edit Profile</h2>
+        <form action="/action.page.php">
+            <div id="edit-name-add" class="edit">
+                <label for="changename" class="label-for-header">Name of Pharmacy</label>
+                <input id="changename" class="input-text" type="text">
+
+                <label for="changeaddress" class="label-for-header">Address</label>
+                <input id="takeadd" class="input-text" type="text">
+            </div>
+
+            <div id="edit-icon" class="edit">
+                <img id="icon" src="D:\Documents\HTML CAPSTONE\images\avatar-f.jpg">
+                <label for="changeicon" class="label-for-input">
+                    Change my Icon <br>
+                    <input id="changeicon" type="file" accept="image/jpg, image/jpeg, image/png" onchange="showPreview(event);">
+                </label>
+            </div>
+
+            <div id="edit-bio" class="edit">
+                <label for="changebio" class="label-for-header">Bio</label>
+                <textarea id="changebio"></textarea>
+            </div>
+
+            <div id="button">
+                <button type="submit" id="submit">Save Changes</button>
+            </div>
+        </form>
+
+        <script type="text/javascript">
+            function showPreview(event){
+                if(event.target.files.length > 0){
+                    var src = URL.createObjectURL(event.target.files[0]);
+                    var preview = document.getElementById("icon");
+                    preview.src = src;
+                    preview.style.width = "170px";
+                    preview.style.height = "170px";
+                    preview.style.objectFit = "cover";
+                    }
+                }
+        </script>
+    </body>
+</html>
