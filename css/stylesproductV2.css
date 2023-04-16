@@ -1,8 +1,11 @@
 :root {
-    --coolor1: #3FBFDA;
-    --coolor2: #E55246;
-    --coolor3: #11333A;
-}
+    --color1: #3FBFDA;/* lightblue*/
+    --color2: #E55246;
+    --color3: #11333A;	/* dark green*/
+	--color4: #FC8E33;
+	--color5: #11333A; /*dont mind this multple color*/
+	--color6: #11333A; /*dark blue*/
+}	
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -11,14 +14,14 @@
     /*em = based on previously stated measurement, or the default 16px*/
 }
 #product-section {
-    background-color: var(--coolor2);
+    background-color: var(--color2);
     text-align: center;
     height: 35vh;
 }
 #product-section > h2 {
     position: relative;
     top: 30%;
-    color: var(--coolor3);
+    color: var(--color3);
     font-weight: 800;
     font-size: 4em;
 }
@@ -29,28 +32,27 @@
 }
 .shop-intro > h3 {
     font-size: 2em;
-    color: var(--coolor3);
+    color: var(--color3);
 }
 #categories {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 180px 185px;
-    grid-gap: 9em 5em;
+    grid-template-rows: 185px 185px 185px;
+    grid-gap: 9em 3em;
     padding: 0em 9em;
 } 
 
 .options {
-    background-color: var(--coolor3);
+    background-color: var(--color6);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 150%;
 }
 
 .options > h3 {
     position: relative;
     top: 90%;
-    color: white;
-    text-decoration: underline;
+	color: white;
 }
 .options > a {
     width: auto;
@@ -59,7 +61,7 @@
 }
 
 .options:hover {
-    background-color: var(--coolor1);
+    background-color: var(--color1);
 }
 
 #pharmacies {
@@ -72,7 +74,7 @@
     /*border: 3px solid cyan;*/
 }
 .pharma-name {
-    background-color: var(--coolor3);
+    background-color: var(--color3);
     text-align: center;
     border-radius: 5px;
     /*border: 3px solid cyan;*/
@@ -84,7 +86,7 @@
     text-decoration: none;
 }
 .pharma-name:hover {
-    background-color: var(--coolor1)
+    background-color: var(--color1)
 }
 #go-back {
     text-align: center;
@@ -92,8 +94,8 @@
 }
 #go-back-button {
     text-decoration: none;
-    background-color: var(--coolor2);
-    color: var(--coolor3);
+    background-color: var(--color2);
+    color: var(-color3);
     font-family: 'Rubik', sans-serif;
     font-size: 1.5em;
     padding: 20px;
