@@ -1,217 +1,147 @@
 :root {
     --coolor1: #3FBFDA;
-    --coolor2: #E55246;
+    --coolor2: #fc8e33;
     --coolor3: #11333A;
     --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
 }
-
-h1{
-  position: absolute; top: 4.5em; left: 48%;
-  font-size: 50px;
-  border: 1px solid;
-  width: 19%;
-  padding: 5px;
-  box-shadow: 0px 3px #E55246;
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-h3{
-    position: absolute; 
-    top: 30px;
-    font-size: 50px;
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#main-box {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+#header {
+    width: 100%;
+    height: 9em;
+    background: linear-gradient(120deg,
+    var(--coolor3) 0%,
+    var(--coolor5) 49%,
+    var(--coolor1) 100%
+    );
+}
+#med-pic {
+    width: 100%;
+    object-fit: cover;
+}
+#prescription-required {
+    position: relative;
+    top: -3em;
+    left: 12em;
+    padding: 0.5em 0.9em;
+    background-color: var(--coolor3);
+    width: 200px;
     color: white;
 }
-
-.header {
-  padding: 4.2em;
-  width: 110.9em;
-  background: #E55246;
-  color: white;
-  position: relative; left: -10px; top: -10px;
-}
-
-img{
-    position: absolute; top: 15em; left: 19%;
+#product-side {
+    height: 400px;
+    width: 400px;
     box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+}
+#description-side {
+    margin-left: 2em;
+    width: 50%;
+}
+#product-name {
+    font-size: 2em;
+    border: 1px solid;
     padding: 5px;
+    box-shadow: 0px 3px var(--coolor2);
 }
-.card {
-  max-width: 40em;
-  position: absolute; top: 20em; left: 48%;
-  margin: auto;
-  text-align: left; 
+.textile {
+    font-size: 1.5em;
+    font-weight: 300;
 }
-
-.price {
-  color: #3FBFDA;
-  font-size: 30px;
+#info {
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
 }
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  position: relative; top: 30px; 
-  color: white;
-  background-color: #E55246;
-  text-align: center;
-  cursor: pointer;
-  width: 20%;
-  font-size: 18px;
+#price {
+    color: var(--coolor1);
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
 }
-
-.card button:hover {
-  opacity: 0.7;
+.info-med {
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 1.5em;
 }
-
-.card p1 {
-  border: none;
-  outline: 0;
-  padding: 12.5px;
-  position: relative; bottom: -20px; left: -40%;
-  color: white;
-  background-color: #E55246;
-  text-align: center;
-  width: 20%;
-  font-size: 18px;
+.label-for {
+    font-weight: 300;
 }
-
-.card button1:hover {
-  opacity: 0.7;
-}
-
-
-h2{
-    position: relative; bottom: 640px; left: 74%;
-}
-
-.container {
-  display: block;
-  position: relative; left: 74%; bottom: 650px;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.Title{
-    color: gray;
-    font-size: 22px;
-}
-.Title3 {
-    position: absolute;
-    top: 27em;
-    left: -86%;
-    color: black;
-    height: 10em;
-    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    width: 188%;
-    height: 40%;
-}
-
-h4{
-    position: absolute;
-    top: -30px;
-    left: 13%;
-    width: 15.4em;
-    font-size: 30px;
-}
-   
-
-.BrandAvail{
-    position: absolute;
-    top: 2em;
-    left: 13%;
-    width: 20%;
-    font-size: 30px;
-     border: 1px solid;
-  padding: 10px;
-  box-shadow: 1px 3px #3FBFDA;
-    text-align: center;
-    
-}
-.BrandAvail > img{
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-}
-.Title3 > img{
-    position: absolute;
-    top: 9px;
-    left: 12px;
+#quantity {
+    padding: 0.2em;
+    font-weight: 300;
     width: 10%;
 }
-
-
-.quantity{
-    color: gray;
-    font-size: 20px;
-    position: relative; top: 20px;
+#button-function {
+    margin-top: 2em;
 }
-
-h5{
-    position: absolute;
-    top: -90px;
-    font-size: 40px;
+#outofstock:hover{
+    opacity: 0.8;
+}
+#outofstock {
+    background-color: var(--coolor2);
+    cursor: pointer;
+}
+.buttondapat {
+    font-size: 1em;
+    border: none;
+    padding: 0.5em 1.2em;
+    border-radius: 10px;
+}
+#seller-portion {
+    display: flex;
+    width: 75%;
+    margin: 2em auto 4em auto;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+#seller-avail {
+    font-size: 1.2em;
+}
+#seller-links {
+    padding-left: 1em;
+    margin-top: 1.2em;
+}
+#seller-linktoprof {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+#seller-linktoprof:hover {
+    color: var(--coolor1);
+    transition: ease-in-out .3s all;
+}
+#similar-products {
+    text-align: center;
+    font-size: 1.5em;
+}
+#seller-pic {
+    width: 80px;
+    border-radius: 50%;
+    margin: 0.5em 0 0.5em 1em;
+}
+.med-pic {
+    width: 100%;
+    object-fit: cover;
+}
+#product-holder {
+    display: flex;
+    /*border: 1px solid red;*/
+    padding: 1.5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.seller-tab {
+    padding: 8px;
 }
 .item {
     width: 20%;
@@ -221,160 +151,110 @@ h5{
 .item:hover {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
 }
-
-/* IMAGE FOR SAME SHOP*/
-.link-image > img {
-    width: 11%;
-    object-fit: cover;
-    border-radius: 1px;
-    position: absolute;
-    top: 3px;
-}
-
-
-.med-name {
-    font-weight: 300;
-}
 .med-desc {
     padding: 8px;
 }
-.seller-tab {
-    padding: 8px 8px 0 8px;
+.med-name {
+    font-weight: 300;
 }
-#product-holder {
-    display: flex;
-    /*border: 1px solid red;*/
-    padding: 1em 7em;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    position: absolute; top: 68em; left: 25px;
-}
-
-#nav-buttons {
+#go-back {
+    margin: 5em;
     text-align: center;
-    /*border: 1px solid red;*/
-    margin: 2em 0 4em 0;
 }
-hr {
-    width: 90%;
-    margin: 0 auto;
-}
-.round {
-    font-size: 1em;
+#go-back-button {
     text-decoration: none;
     color: black;
-    margin: 0 1em;
-}
-.round:hover {
-    opacity: 0.8;
-}
-.before {
-    background-color: var(--coolor1);
-    padding: 10px;
-}
-.after {
+    font-size: 1.2em;
+    padding: 0.9em 1.5em;
     background-color: var(--coolor2);
-    padding: 10px 25px;
+    border-radius: 10px;
 }
-@media (max-width: 1200px) {
-    #search-function {
-        display: block;
-        text-align: center;
-        padding-top: 20px;
-    }
-    #categories-holder {
-        justify-content: center;
-    }
-    .sort-category {
-        padding: 10px;
-    }
+#go-back-button:hover {
+    background-color: var(--coolor3);
+    color: var(--coolor2);
+    transition: ease-in-out .3s all;
 }
 @media (max-width: 950px) {
-    #sort-by {
-        display: inline;
-        padding: 0;
+    #prescription-required {
+        font-size: 0.8em;
+        top: -3em;
+        left: 15em;
+        padding: 0.5em;
+        width: 150px;
+    }
+    #product-side {
+        height: 350px;
+        width: 350px;
     }
 }
 @media (max-width: 850px) {
+    #product-side {
+        height: 300px;
+        width: 300px;
+    }
+    #description-side {
+        width: 40%;
+    }
+    .info-med {
+        line-height: 1.2;
+        font-size: 0.8em;
+        margin-bottom: 1.5em;
+    }
     .item {
         width: 35%;
         margin: 20px;
     }
-    .sort-category {
-        margin: 0.3em 1em;
-    }
 }
 @media (max-width: 640px) {
-    #title-holder {
-        height: 20vh;
+    #main-box {
+        flex-direction: column;
+        align-items: center;
     }
-    #med-category {
-        font-size: 3em;
-        padding-top: 0.5em;
+    #description-side {
+        width: 70%;
+        margin: 1em auto;
     }
-    #med-interlude {
-        padding-bottom: 0.5em;
-    }
-}
-@media (max-width: 480px) {
-    #title-holder {
-        height: 15vh;
-    }
-    #med-category {
-        font-size: 2.5em;
-    }
-    #med-interlude {
-        padding-bottom: 0.2em;
-    }
-    #sort-by {
+    .buttondapat {
         font-size: 0.8em;
+        display: block;
+        margin-bottom: 0.5em;
     }
-    #search {
-        padding: 4px;
-        font-size: 0.6em;
+    #edititem {
+        width: 100px;
     }
-    #search-button {
-        padding: 4px 8px;
-        margin-top: 3px;
-        font-size: 0.6em;
+    #outofstock {
+        margin-left: 0;
     }
-    .sort-category {
-        border: 2px solid var(--coolor2);
-        padding: 8px 10px;
-        font-size: 0.8em;
-        margin: 0.2em 0.7em;
+    #go-back {
+        margin: 2em;
     }
-    .round {
-        font-size: 0.8em;
-        margin: 0 0.7em;
+    #go-back-button {
+        font-size: 0.9em;
+        padding: 0.5em 1.2em;
     }
-    .before {
-        padding: 9px;
-    }
-    .after {
-        padding: 9px 20px;
-    }
-    .item {
-        width: 40%;
-        margin: 10px;
+    #seller-avail {
+        font-size: 0.9em;
     }
 }
 @media (max-width: 400px) {
-    #title-holder {
-        height: 10vh;
+    #product-side {
+        height: 200px;
+        width: 200px;
     }
-    #med-category {
-        font-size: 2em;
-    }
-    #med-interlude {
-        font-size: 0.7em;
-        margin-bottom: 0.4em;
-    }
-    .sort-category {
+    #prescription-required {
         font-size: 0.6em;
-        border-radius: 20px;
-        margin: 0 0.5em;
+        top: -3em;
+        left: 8em;
+        width: 115px;
+    }
+    #product-name {
+        font-size: 1.4em;
+    }
+    .textile {
+        font-size: 1em;
+    }
+    #quantity {
+        width: 20%;
     }
     .seller-tab {
         padding: 5px 5px 0 5px;
@@ -389,7 +269,36 @@ hr {
     .med-desc {
         padding: 5px;
     }
-     .med-price {
+    .med-price {
         font-size: 0.8em;
+    }
+    #seller-avail {
+        font-size: 0.8em;
+    }
+    #seller-linktoprof {
+        font-size: 0.7em;
+    }
+    #seller-pic {
+        width: 60px;
+        margin-left: 0.5em;
+    }
+}
+@media (max-width: 300px) {
+    .item {
+        width: 55%;
+        margin: 10px;
+    }
+    #seller-pic {
+        width: 40px;
+    }
+    #seller-avail {
+        font-size: 0.6em;
+    }
+    #seller-linktoprof {
+        font-size: 0.5em;
+    }
+    #seller-links {
+        padding-left: 0.5em;
+        margin-top: 0.6em;
     }
 }
