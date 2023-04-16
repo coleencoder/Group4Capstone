@@ -1,5 +1,5 @@
 :root {
-    --color1: #3FBFDA;/* lightblue*/
+    --coolor1: #3FBFDA;/* lightblue*/
     --color2: #E55246;
     --color3: #11333A;	/* dark green*/
 	--color4: #FC8E33;
@@ -39,7 +39,10 @@
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 185px 185px 185px;
     grid-gap: 9em 3em;
-    padding: 0em 9em;
+    padding-top: 0em;
+    padding-bottom: 0em; 
+    padding-left: 2vw;
+    padding-right: 2vw;
 } 
 
 .options {
@@ -47,23 +50,28 @@
     text-align: center;
     border-radius: 10px;
     height: 150%;
+    width: 20vw;
+    overflow: hidden;
+    padding-bottom: 2em;
+    align-content: center;
 }
 
 .options > h3 {
-    position: relative;
-    top: 90%;
+    padding-top: 1em;
 	color: white;
 }
 .options > a {
     width: auto;
-    height: 180px;
     border-radius: 5px;
 }
-
 .options:hover {
-    background-color: var(--color1);
+    background-color: var(--coolor1);
 }
-
+.options img {
+    padding-top: 1em;
+    width: 80%;
+    height: 80%;
+}
 #pharmacies {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -85,8 +93,18 @@
     color: white;
     text-decoration: none;
 }
+.pharma-name > button{
+    font-size: 1em;
+    background: inherit;
+    align-self: center;
+    border: none;
+    position: relative;
+    top: 45%;
+    color: white;
+    text-decoration: none;
+}
 .pharma-name:hover {
-    background-color: var(--color1)
+    background-color: var(--coolor1)
 }
 #go-back {
     text-align: center;
@@ -95,7 +113,7 @@
 #go-back-button {
     text-decoration: none;
     background-color: var(--color2);
-    color: var(-color3);
+    color: var(--color3);
     font-family: 'Rubik', sans-serif;
     font-size: 1.5em;
     padding: 20px;
