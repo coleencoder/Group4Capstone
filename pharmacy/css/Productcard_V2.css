@@ -73,6 +73,10 @@
     font-weight: 300;
     margin-bottom: 1.5em;
 }
+#product-desc {
+    width: 75%;
+    margin: 1em auto 3em auto;
+}
 .label-for {
     font-weight: 300;
 }
