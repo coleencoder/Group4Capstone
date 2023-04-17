@@ -68,6 +68,10 @@
     padding-top: 0.5em;
     padding-bottom: 0.8em;
 }
+#product-desc {
+    width: 75%;
+    margin: 1em auto 3em auto;
+}
 .info-med {
     line-height: 1.4;
     font-weight: 300;
@@ -204,6 +208,9 @@
         width: 35%;
         margin: 20px;
     }
+    #product-desc {
+        margin-top: 0;
+    }
 }
 @media (max-width: 640px) {
     #main-box {
@@ -300,5 +307,8 @@
     #seller-links {
         padding-left: 0.5em;
         margin-top: 0.6em;
+    }
+    .info-med {
+        font-size: 0.6em;
     }
 }
