@@ -12,96 +12,56 @@
 
     <body>
         <h2 id="headerpage">Your Cart</h2>
-        <div id="item-cart">
-            <div class="cart-heading">
-        
-            </div>
             <hr>
-    <p1>Pharmacy Name</p1>
-   <div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <form class="col-md-12" method="post">
-            <div class="site-blocks-table">
-              <table id="tabled">
-                <thead>
-                  <tr>
-                    <th class="product-thumbnail">Image</th>
-                    <th class="product-name">Product</th>
-                    <th class="product-price">Price</th>
-                    <th class="product-quantity">Quantity</th>
-                    <th class="product-total">Total</th>
-                    <th class="product-remove">Remove</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="product-thumbnail">
-                      <img src="Ibuprofen.avif" alt="Image" class="img-fluid" width="120px">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">Ibuprofen</h2>
-                    </td>
-                    <td>P55.00</td>
-                    <td>
-                      <div class="input-group mb-3" style="max-width: 120px;">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                        </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder=""
-                          aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                        </div>
-                      </div>
-    
-                    </td>
-                    <td>P49.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
-                  </tr>
-    
-                  <tr>
-                    <td class="product-thumbnail">
-                       <img src="bioderma-atoderm-creme-ultra-moisturising-cream-500ml.jpg" alt="Image" class="img-fluid" width="120px">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">Bioderma</h2>
-                    </td>
-                    <td>P49.00</td>
-                    <td>
-                      <div class="input-group mb-3" style="max-width: 120px;">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                        </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder=""
-                          aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                        </div>
-                          
-                      </div>
-    
-                    </td>
-                    <td>P49.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
-                  </tr>
-                </tbody>
-              </table>
+        <form action="/action.php">
+            <div id="cart-table">
+                <h3 id="pharmacy-name">Pharmacy Name</h3>
+                <table id="table-of-products">
+                    <thead>
+                      <tr>
+                        <th class="product-thumbnail">Image</th>
+                        <th class="product-name">Product</th>
+                        <th class="product-price">Price</th>
+                        <th class="product-quantity">Quantity</th>
+                        <th class="product-sub">Subtotal</th>
+                        <th class="product-remove">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="product-thumbnail">
+                          <img src="D:\Documents\HTML CAPSTONE\images\neozep10.jpg" alt="Image" class="product-pic">
+                        </td>
+                        <td class="product-name">Neozep</td>
+                        <td class="product-price">P55.00</td>
+                        <td class="product-quan">
+                          <div class="up-down-numbers">
+                              <button class="control-number down" type="button">&minus;</button>
+                              <input type="text" inputmode="numeric" class="number-field">
+                              <button class="control-number up" type="button">&plus;</button>
+                            </div>
+                        </td>
+                        <td class="product-sub">P55.00</td>
+                        <td class="product-remove"><button type="button" class="remove">Delete</button></td>
+                      </tr>
+                    </tbody>
+                </table>
             </div>
-          </form>
-              <button class="button">Add Prescription Here</button>
-            <div id="main-dock">
-            <div id="total-portion">
-                <p id="total">Total: </p>
-                <h4 id="price">PhP 999</h4>
+            <div id="label-input-holder">
+                <label for="product-prescription" id="for-presc">Upload your prescription here: </label>
+                <div id="prescription-function">
+                    <input type="file" id="product-prescription" accept=".doc, .pdf, image/jpg, image/jpeg, image/png">
+                </div>
             </div>
-            <div id="button-portion">
-                <a href="checkoutpage.html" id="linktocheckout" target="_self">Checkout</a>
+            <div id="product-total">
+                <div id="total-portion">
+                    <label for="price" id="total">Total: </label>
+                    <input type="text" id="price">
+                </div>
+                <div id="product-checkout">
+                    <button type="submit" id="submit-checkout">Checkout</button>
+                </div>
             </div>
-        </div>
-        </div>
-       </div>
-    </div>
-    </div>
+        </form>
     </body>
 </html>
