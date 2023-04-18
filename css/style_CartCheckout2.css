@@ -1,8 +1,9 @@
 :root {
     --coolor1: #3FBFDA;
-    --coolor2: #E55246;
+    --coolor2: #fc8e33;
     --coolor3: #11333A;
     --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,108 +14,95 @@
 :not(i) {
     font-family: 'Rubik', sans-serif;
 }
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: #3FBFDA;
-  position: relative;
-  left: 77.5%;
-  top:3em;
-}
-#headerpage {
-    font-weight: 500px;
-    font-size: 2.5em;
-    padding: 3em 3em 1em 3em;
-}
-p1{
-    position: relative; 
-    left: 10%;
-    top: 10px;
-    font-size: 200%;
-    font-weight: bold;
-}
-
-}
-#med-image {
-    height: 100%;
-    width: 100%;
-}
-.heading-word {
-    padding: 1em 1em 0.5em 1em;
-}
-.item-row-value {
-    padding: 1.3em;
-}
-#input-quantity {
-    padding: 0.5em;
-    margin: 1.3em;
-    font-weight: 300;
-}
-.item, .cart-heading {
-    width: 80%;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 5px;
-}
-.cart-heading, .item-row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 0.5em;
-    /*border: 1px solid black;*/
-}
-.item-row {
-    margin: 10px 0;
-    /*border: 1px solid black;*/
+body {
+    background-color: var(--coolor4);
 }
 hr {
     border: 2px solid var(--coolor1);
     width: 85%;
     margin: 1em auto;
 }
-
-#tabled {
-  border-collapse: collapse;
-  width: 80%;
-  position: relative; 
-  top: 30px;
-  left: 12em;
+#headerpage {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1em;
 }
-
-#tabled td, #tabled th {
-  border: 1px solid #ddd;
-  padding: 8px;
+#pharmacy-name {
+    font-size: 1.5em;
+    margin-left: 4.5em;
 }
-#tabled tr:nth-child(even){background-color: #f2f2f2;}
-
-#tabled tr:hover {background-color: #ddd;}
-
-#tabled th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #3FBFDA;
-  color: white;
+table, th, td {
+    border: 1px solid var(--coolor4);
+    border-collapse: collapse;
 }
-
+th {
+    background-color: var(--coolor2);
+    padding: 0.5em;
 }
-body {
-    background-color: var(--coolor4);
+.product-name {
+    width: 30%;
 }
-#main-dock {
+.product-quantity {
+    width: 15%;
+}
+td {
+    text-align: center;
+    padding: 1em;
+    font-weight: 300;
+}
+.control-number {
+    border: none;
+    cursor: pointer;
+}
+.number-field {
+    width: 50px;
+    border: none;
+    text-align: center;
+}
+#table-of-products {
+    width: 85%;
+    margin: 1em auto;
+}
+.product-pic {
+    width: 100px;
+}
+.remove {
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 300;
+    background-color: var(--coolor1);
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.remove:hover {
+    background-color: var(--coolor2);
+    transition: ease-in-out .3s all;
+}
+#label-input-holder {
+    width: 75%;
+    margin: 0.3em auto 10em auto;
+}
+#prescription-function {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0.5em 1em;
+}
+#prescription-function:hover {
+    border: 1px solid var(--coolor2);
+    transition: ease-in-out .3s all;
+}
+#for-presc {
+    display: block;
+    margin-bottom: 0.2em;
+}
+#product-total {
     width: 80%;
     background-color: white;
     justify-content: flex-end;
     align-items: baseline;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
     display: flex;
     position: fixed;
     bottom: 0;
@@ -123,7 +111,6 @@ body {
 }
 #total-portion {
     display: flex;
-    /*border: 1px solid black;*/
     padding-right: 1.2em;
 }
 #total {
@@ -131,33 +118,105 @@ body {
     font-size: 1.2em;
 }
 #price {
+    border: none;
+    width: 80px;
+    margin-left: 0.2em;
     padding-left: 0.2em;
     font-size: 1.2em;
     color: var(--coolor2);
 }
-#linktocheckout {
-    text-decoration: none;
+#submit-checkout {
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
     color: black;
     font-weight: 300;
     background-color: var(--coolor1);
     padding: 0.5em 2em;
+    cursor: pointer;
 }
-#linktocheckout:hover {
-    opacity: 0.8;
+#submit-checkout:hover {
+    background-color: var(--coolor5);
+    transition: ease-in-out .3s all;
 }
-#button-portion {
+#product-checkout {
     padding-right: 0em;
     text-align: center;
 }
+@media (max-width: 1000px) {
+    #pharmacy-name {
+        font-size: 1.5em;
+        margin-left: 3em;
+    }
+    .remove {
+        font-size: 0.8em;
+        padding: 0.4em 0.8em;
+    }
+    .product-pic {
+        width: 80px;
+    }
+    .number-field {
+        width: 30px;
+    }
+}
+@media (max-width: 850px) {
+    td {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 660px) {
+    #pharmacy-name {
+        font-size: 1em;
+        margin-left: 2.2em;
+    }
+    th {
+        font-size: 0.8em;
+    }
+}
 @media (max-width: 450px) {
-    #main-dock {
+    #headerpage {
+        font-size: 2em;
+        padding: 0.8em;
+    }
+    #pharmacy-name {
+        font-size: 0.8em;
+        margin-left: 2em;
+    }
+    .product-pic {
+        width: 50px;
+    }
+    th {
+        font-size: 0.6em;
+    }
+    td, label, input[type="file"] {
+        font-size: 0.5em;
+    }
+    #prescription-function {
+        border: 1px solid gray;
+        width: 100%;
+        padding: 0.2em 0.6em;
+    }
+    #label-input-holder {
+        margin-bottom: 6em;
+    }
+    #table-of-products {
+        width: 65%;
+        margin: 1em auto;
+    }
+    #product-total{
         justify-content: center;
         align-items: center;
+    }
+    #total {
+        text-align: center;
+    }
+    #price {
+        width: 40px;
     }
     #total-portion {
         flex-direction: column;
     }
-    #total, #price, #linktocheckout {
+    #total, #price, #submit-checkout {
         font-size: 0.8em;
     }
 }
