@@ -1,7 +1,9 @@
 :root {
     --coolor1: #3FBFDA;
-    --coolor2: #E55246;
+    --coolor2: #fc8e33;
     --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -11,14 +13,16 @@
     /*em = based on previously stated measurement, or the default 16px*/
 }
 #product-section {
-    background-color: var(--coolor2);
+    background: linear-gradient(120deg,
+        var(--coolor3) 0%,
+        var(--coolor5) 49%,
+        var(--coolor1) 100%
+        );
     text-align: center;
-    height: 35vh;
+    padding: 4em;
 }
 #product-section > h2 {
-    position: relative;
-    top: 30%;
-    color: var(--coolor3);
+    color: white;
     font-weight: 800;
     font-size: 4em;
 }
@@ -113,5 +117,13 @@
         grid-template-rows: 200px 200px 200px;
         grid-gap: 15px;
         padding: 1em 2em;
+    }
+}
+@media (max-width: 600px) {
+    #product-section {
+        padding: 2.5em;
+    }
+    #product-section > h2 {
+        font-size: 2.5em;
     }
 }
