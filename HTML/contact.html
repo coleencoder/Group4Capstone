@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/styles_contact.css">
+    <link rel="stylesheet" href="../css/styles_loginnavie.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
@@ -17,14 +18,15 @@
       <section class="shop-intro">
         <h3>What they say about the website:</h3>
       </section>
+      <!--RATING-->
       <div id="stats">
         <div class="values">
             <h3>User Rating</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+            <span class="fa checked"></span>
+            <span class="fa checked"></span>
+            <span class="fa checked"></span>
+            <span class="fa checked"></span>
+            <span class="fa "></span>
             <p class="content">4.1 average based on 254 reviews.</p>
             <div class="row">
                 <div class="side">
@@ -85,72 +87,36 @@
               </div>           
         </div>
       </div>
+      <!--SITE REVIEWS-->
       <h2 class="interlude">Site Reviews</h2> 
       <div id="table-border">
           <div class="review">
-              <h3 class="name">Frank Anthony</h3>
+              <h3 class="name">Customer</h3>
               <div>
                   <span class="rating">                        
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span></span>
+                  <span class="fa  checked"></span>
+                  <span class="fa  checked"></span>
+                  <span class="fa  checked"></span>
+                  <span class="fa  checked"></span>
+                  <span class="fa "></span></span>
                   <span class="date">Two weeks ago</span>
               </div>
               <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem.</p>
               <hr>
           </div>
-          <div class="review">
-              <h3 class="name">Frank Anthony</h3>
-              <div>
-                  <span class="rating">                        <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span></span>
-                  <span class="date">Two weeks ago</span>
-              </div>
-              <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem.</p>
-              <hr>
-          </div>
-          <div class="review">
-              <h3 class="name">Frank Anthony</h3>
-              <div>
-                  <span class="rating">                        <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span></span>
-                  <span class="date">Two weeks ago</span>
-              </div>
-              <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem.</p>
-              <hr>
-          </div>
-          <div class="review">
-              <h3 class="name">Frank Anthony</h3>
-              <div>
-                  <span class="rating">                        <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span></span>
-                  <span class="date">Two weeks ago</span>
-              </div>
-              <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem.</p>
-              <hr>
-          </div>
-      </div>           
-    <!--END REVIEW PAGE-->
+      </div>
+      <div id="go-back">
+        <a href = "#" id="go-back-button">See all reviews</a>
+      </div>
     <!-- START CONTACT PAGE-->
     <div class="contact-bg">
       <div class="container">
         <div class="row header">
-          <h1>CONTACT US &nbsp;</h1>
-          <h3>Fill out the form below to learn more!</h3>
+          <h1>We would like to hear from you! &nbsp;</h1>
+          <h4>Tell us your experience in using the website</h4>
         </div>
-          <div class="row body">
-          <form action="#">
+        <div class="row body">
+          <form>
             <!--START CLICKABLE STARS-->
             <div class="rate">
               <input type="radio" id="star5" name="rate" value="5" />
@@ -169,20 +135,14 @@
               <li>
                 <p class="left">
                   <label for="first_name">First name</label>
-                  <input type="text" name="first_name" placeholder="Dylan" />
+                  <input type="text" name="first_name" placeholder="First Name" />
                 </p>
                 <p class="left">
                   <label for="last_name">Last name</label>
-                  <input type="text" name="last_name" placeholder="Cipriano" />
+                  <input type="text" name="last_name" placeholder="Last Name" />
                 </p>
               </li>
 
-              <li>
-                <p>
-                  <label for="email">Email <span class="req">*</span></label>
-                  <input type="email" name="email" placeholder="dylanbluecipriano20@gmail.com" />
-                </p>
-              </li>
               <li>
                 <div class="divider"></div>
               </li>
@@ -200,5 +160,8 @@
       </div>
     </div>
     <!-- END CONTACT PAGE-->
+    <div id="go-back">
+      <a href = "#" id="go-back-button">Back to Home</a>
+  </div>
   </body>
 </html>
