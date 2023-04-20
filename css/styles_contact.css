@@ -1,0 +1,314 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #E55246;
+    --coolor3: #11333A;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    /*em = based on previously stated measurement, or the default 16px*/
+}
+#product-section {
+    background-color: var(--coolor2);
+    text-align: center;
+    height: 35vh;
+}
+#product-section > h2 {
+    position: relative;
+    top: 30%;
+    color: var(--coolor3);
+    font-weight: 800;
+    font-size: 4em;
+}
+.shop-intro {
+    text-align: center;
+    padding: 1.5em;
+    /*border: 2px solid magenta;*/
+}
+.shop-intro > h3 {
+    font-size: 2em;
+    color: var(--coolor3);
+}
+#stats {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+.values > i {
+
+  font-size: 2em;
+
+  color: var(--coolor2);
+
+}
+
+.values > h3 {
+  font-size: 1.5em;
+}
+
+.values > p {
+
+  font-weight: 300;
+
+}
+
+.values {
+
+  margin: auto;
+
+  text-align: center;
+
+  width: 40%;
+
+  padding: 20px 20px 30px 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+.fa::before {
+  font-size: 25px;
+  content: '★ ';
+}
+
+.checked {
+  color: orange;
+}
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.review{
+  margin-bottom: 2%;
+}
+/*Go back button css*/
+#go-back {
+  text-align: center;
+  margin: 30px 0;
+}
+#go-back-button {
+  text-decoration: none;
+  background-color: var(--coolor2);
+  color: var(--coolor3);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5em;
+  padding: 20px;
+}
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+  /*TABLE BORDER*/
+  #table-border{
+    background-color: white;
+    border: 1px solid black; 
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1.5em;
+  }
+  /*content*/
+  .content{
+    padding-bottom: 2%;
+  }
+
+  /*interlude*/
+  .interlude {
+    padding: 70px 0px 15px 15px;
+    background-color: white;
+  }
+  /*contact bg*/
+  .contact-bg{
+    background-color: var(--coolor1);
+    display: flex;
+    justify-content: center;
+    width: 100svw;
+    height: 100svh;
+    margin: 0%;
+    padding: 3%;
+  }
+  .container {
+  display: block;
+  max-width: 510px;
+  min-width: 324px;
+  height: fit-content;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  color: var(--coolor3);
+  text-align: center;
+}
+.row.body {
+  padding: .5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right;
+}
+/*CLICKABLE STAR CSS*/
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate input{
+  visibility: hidden;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/*FORM BUTTON*/
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  font-weight: 1.5em;
+}
+.btn.btn-submit {
+  background-color: var(--coolor3);
+}
+.btn.btn-submit:hover {
+  background-color: var(--coolor1);
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--coolor3);
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+form small {
+  margin: 0 0 0 0.5em;
+}
