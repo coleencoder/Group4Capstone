@@ -51,7 +51,8 @@
 }
 .to-complete:hover {
     cursor: pointer;
-    color: var(--coolor4);
+    color: white;
+    background-color: var(--coolor3);
 }
 /* End of New CSS for Complete Profile notif */
 #seller-profile {
