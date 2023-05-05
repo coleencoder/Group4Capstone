@@ -1,3 +1,7 @@
+<?php
+    include 'startsession.php';
+    include 'redirect_index_if_not_loggedin.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,17 +42,7 @@
     </head>
     <body>
         <div id="main-box">
-            <nav id="seller-options">
-                <div id="icon">
-                    <img src="images\pharmacist.png">
-                    <h3>Your Profile</h3>
-                </div>
-                <i></i> <a href="#" class="link-page">Dashboard</a>
-                <i></i> <a href="#" class="link-page">Products</a>
-                <i></i> <a href="#" class="link-page">Shipment</a>
-                <i></i> <a href="#" class="link-page">Reviews</a>
-                <i></i> <a href="#" class="link-page">Settings</a>
-            </nav>
+        <?php include 'selleroptions.php'?>
             <div id="seller-profile">
                 <div class="tab">
                     <button class="tablinks" onclick="opentab(event, 'Shipment')"><h2>Shipment</h2></button>
@@ -147,6 +141,5 @@
                 <!--END PRESCRIPTION TABLE-->
             </div>
         </div>
-
     </body>
 </html>

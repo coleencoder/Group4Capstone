@@ -1,3 +1,19 @@
+<?php
+    include 'startsession.php';
+    require 'db_pharmacy_connect.php';
+    include 'redirect_index_if_not_loggedin.php';
+    $session_account = $_SESSION['phar_account'];
+    $account_query= mysqli_query($conn,"select * from pharmacy_table where pharmacy_pk='$session_account' LIMIT 1");
+    $account = mysqli_fetch_array($account_query);  
+    $black_circle = '●'; // Unicode character for a black circle
+    $masked_string = '';
+    if(isset($_SESSION['pharmacy_password'])){
+        for ($i = 0; $i < strlen($_SESSION['pharmacy_password']); $i++) {
+            $masked_string .= $black_circle;
+        }
+    }
+    $conn->close();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,46 +28,34 @@
     </head>
     <body>
         <div id="main-box">
-            <nav id="seller-options">
-                <div id="icon">
-                    <img src="images\pharmacist.png">
-                    <h3>Your Profile</h3>
-                </div>
-                <i></i> <a href="#" class="link-page">Dashboard</a>
-                <i></i> <a href="#" class="link-page">Products</a>
-                <i></i> <a href="#" class="link-page">Shipment</a>
-                <i></i> <a href="#" class="link-page">Reviews</a>
-                <i></i> <a href="#" class="link-page">Settings</a>
-            </nav>
+        <?php include 'selleroptions.php'?>
             <div id="seller-profile">
                 <div class="greet">
                     <h2>Account Settings</h2>
                 </div>
                 <div class="motivation">
-                    <div class="personal-forms">
+                    <div class="personal-forms" style = "width : 50%;">
                         <h3>Pharmacy Information</h3>
                         <div class="hr"></div>
 
                         <h4 class="profile-trait">Username</h4>
-                        <p class="profile-value">AraMogus00</p>
+                        <?php echo '<p class="profile-value">'.$account['username'].'</p>';?>
+                        
 
                         <h4 class="profile-trait">Pharmacy Name</h4>
-                        <p class="profile-value">Aramie Pharmacy</p>
+                        <?php echo '<p class="profile-value">'.$account['name'].'</p>';?>
 
                         <h4 class="profile-trait">Email address</h4>
-                        <p class="profile-value">AraMogusus00@email.com</p>
+                        <?php echo '<p class="profile-value">'.$account['email'].'</p>';?>
 
-                        <h4 class="profile-trait">Phone Number</h4>
-                        <p class="profile-value">09111111111</p>
-                        
                         <h4 class="profile-trait">Address</h4>
-                        <p class="profile-value">B. Aranas Street, Cebu City, Cebu,</p>
-                        
-                        <h4 class="profile-trait">DTI-Registered</h4>
-                        <p class="profile-value">Yes</p>
+                        <?php echo '<p class="profile-value">'.$account['address'].'</p>';?>
 
                         <div id="button-container">
-                            <a href="pharmacy_setting_edit.html" id="edit" target="_self">Edit Profile</a>
+                            <a href="pharmacy_setting_edit.php" id="edit" target="_self">Edit Profile</a>
+                        </div>
+                        <div id="button-container" style = "position: absolute; bottom: 16vh;">
+                            <a href="logout.php" id="edit" target="_self">Log Out</a>
                         </div>
                     </div>
                     <div class="personal-forms">
@@ -59,13 +63,10 @@
                         <div class="hr"></div>
 
                         <h4 class="profile-trait">Password</h4>
-                        <p class="profile-value">&#9679&#9679&#9679&#9679&#9679&#9679&#9679</p>
+                        <?php echo'<p class="profile-value">'.$masked_string.'</p>';?>
 
                         <div id="button-container">
-                            <a href="pharmacy_change_password.html" id="edit" target="_self">Change Password</a>
-                        </div>
-                        <div id="button-container" style = "position: absolute; bottom: 16vh;">
-                            <a href="pharmacy_change_password.html" id="edit" target="_self">Log Out</a>
+                            <a href="pharmacy_change_password.php" id="edit" target="_self">Change Password</a>
                         </div>
                     </div>
                 </div>

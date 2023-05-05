@@ -58,16 +58,12 @@
                             <option value="Vitamins">Vitamins</option>
                         </select>
                         <input type="text" class="item-detail" placeholder="Name of Item" required>
-                        <div class="item-pricing-q">
+                        <div id="item-pricing">
                             <label for="item-price" class="for-description">Price</label>
                             <div id="item-pricing-breakdown">
                                 <span id="pesos">PHP</span>
                                 <input id="item-price" name="item-price" type="text" inputmode="numeric" placeholder="Price of the item" required>
                             </div>
-                        </div>
-                        <div class="item-pricing-q">
-                            <label for="quantity" id="howmany">Quantity</label>
-                            <input id="item-quan" name="quantity" type="number" inputmode="numeric" required>
                         </div>
                         <div id="item-desc">
                             <label for="description" class="for-description">Description</label>
@@ -76,6 +72,23 @@
                         <div id="center-button">
                             <button type="submit" id="post">Save Changes</button>
                         </div>
+                    <style>
+#go-back {
+    text-align: center;
+    margin: 30px 0;
+}
+#go-back-button {
+    text-decoration: none;
+    background-color: var(--coolor2);
+    color: var(--coolor3);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+}
+</style>
+ <div id="go-back">
+            <a href="  " id="go-back-button">Go Back</a>
+            </div>
                     </div>
                 </form>
             </div>
