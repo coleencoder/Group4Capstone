@@ -1,35 +1,33 @@
 <?php
-    include 'startsession.php';
-    require 'dbconnect.php';
-
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    include 'dbconnect.php';
+    $token;
+    $token_from_db;
     if(isset($_GET['token'])){
-        $verification_token = $_GET['token'];
-        $verify_query = "SELECT verification_token FROM user_account WHERE verification_token='$token' LIMIT 1";
-        $verify_query_run = mysqli_query($conn, $verify_query);
+        $token = $_GET['token'];
+    }
 
-        if(mysqli_num_rows($verify_query_run) > 0){
-            $row = mysqli_fetch_array($verify_query_run);
-            if($row['verification_level'] == 0){
-                $clicked_token = $_GET['token'];
-                $update_query = "UPDATE user_account SET verification_level=1 WHERE verification_token='$clicked_token' LIMIT 1";
-                $update_query_run = mysqli_query($conn, $update_query);
-                if($update_query_run){
-                    echo "Account has been verified successfully!";
-                    exit();
-                }else{
-                    echo "Verification failed.";
-                    exit();
-                }
-            }else{
-                echo "This account has already been verified. Please log in.";
-                exit();
-            }
-        }else{
-            echo "This token does not exists. Please sign up again.";
-            exit();
-        }
+    $verify_query = "SELECT verification_token FROM customer_table WHERE verification_token='$token' LIMIT 1";
+    $verify_query_run = mysqli_query($conn, $verify_query);
+    if($verify_query_run){
+        $verif_token = mysqli_fetch_assoc($verify_query_run);
+        $token_from_db = $verif_token['verification_token'];
     }else{
-        echo "Cant get verified.";
+        echo '<script>alert("Query to get matching token failed.")</script>';
         exit();
     }
+
+    if($token != $token_from_db){
+        echo '<script>alert("Tokens doesnt match.")</script>';
+    }
+    $change_verif_level_query = "UPDATE customer_table
+                                SET verification_level = '1'
+                                WHERE verification_token = '$token'";
+    $change_verif_level = mysqli_query($conn, $change_verif_level_query);
+
+    if($change_verif_level){
+        echo '<script>alert("Account Verified!")</script>';
+    }
+
 ?>

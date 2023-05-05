@@ -1,42 +1,29 @@
-<?php
-    include 'startsession.php';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nav Bar</title>
-    <link rel="stylesheet" href="css/stylesnavie.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
-</head>
-<body>
-        <div class="nav-actual">
-            <div class="logo-holder">
-                <h2>ALMED</h2>
-            </div>
-                <a href="index.php">HOME</a>
-                <a href="products.php">SHOP</a>
-                <a href="contact.php">CONTACT US</a>
-                <a href="about.html">ABOUT US</a>
-                <div class="dropdown">
+<div class="nav-actual">
+           <a href="../index.php" id="header"><h2>ALMED</h2></a>
+            <ul class="first-ul">
+                <li><a href="../PHP/products.php">SHOP</a></li>
+                <li><a href="../PHP/review_page.php">REVIEWS</a></li>
+                <li><a href="../PHP/about.php">ABOUT US</a></li>
                 <?php 
                 if(!isset($_SESSION['session_name'])){
-                    echo '<button class="log-in">LOGIN</button>
-                    <div id="login-option">
-                        <a href="login.php">Customer</a>
-                        <a href="pharmacy/pharmacy_login.php">Pharmacy</a>
-                    </div>';  
+                    echo '
+                    <li><a href= "../PHP/login.php">LOGIN </a>
+                    </li>';  
                 }else { 
-                    echo '<button class="log-in">'.$_SESSION['session_name'].'</button>
-                    <div id="login-option">
-                        <a href="userprofile.php">My Profile</a>
-                        <a href="logout.php">Logout</a>
-                    </div>';
+                    echo '<li><a>'.strtoupper($_SESSION['session_name']).'</a>
+                    <!--DROPDOWN-->
+                    <ul class="sub-ul">
+                        <li><a href="../PHP/user_myaccountdef.php">PROFILE</a></li>
+                        <li><a href="../PHP/logout.php">LOG OUT</a></li>
+                    </ul>
+                </li>';
                 }?>
-                </div>
-            </div>
-    </body>
-</html>
+            </ul>
+            <?php 
+                if(!isset($_SESSION['session_name'])){
+                    echo '<a id="cart" style="color:var(--coolor1); pointer-events:none;">CART</a>';  
+                }else { 
+                    echo '<a href="../PHP/Cart_Checkout2.php" id="cart">CART</a>';
+                }
+            ?>
+</div>
